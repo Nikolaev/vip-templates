@@ -1,13 +1,14 @@
 //
-//  {{ prefix }}{{ module_info.name }}PresenterInput.h
-//  {{ module_info.project_name }}
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by {{ developer.name }} on {{ date }}.
-//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
 //
+
 
 #import <Foundation/Foundation.h>
 
-@protocol {{ prefix }}{{ module_info.name }}PresenterInput <NSObject>
+@protocol ___FILEBASENAMEASIDENTIFIER___PresenterInput <NSObject>
 
 @end

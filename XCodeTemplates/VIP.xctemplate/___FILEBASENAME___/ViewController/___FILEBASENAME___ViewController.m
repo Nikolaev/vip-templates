@@ -50,6 +50,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.output requestInitialSetup];
 }
 
 - (void)dealloc

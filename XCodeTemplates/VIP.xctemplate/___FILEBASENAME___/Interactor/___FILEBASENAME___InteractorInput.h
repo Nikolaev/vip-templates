@@ -10,4 +10,6 @@
 
 @protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput <NSObject>
 
+- (void)requestInitialSetup;
+
 @end

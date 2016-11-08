@@ -9,16 +9,28 @@
 /* Begin PBXBuildFile section */
 		3D1F1E45919C73617F0DA931 /* libPods-VKWallReaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E90C0B0D8AC71D88B8153 /* libPods-VKWallReaderTests.a */; };
 		576247D5A14DFBB8CA94450D /* libPods-VKWallReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7E227FCAE4BD8010D849B3 /* libPods-VKWallReader.a */; };
+		FB8C8C071DD1D578008A7995 /* Items.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8C8C061DD1D578008A7995 /* Items.storyboard */; };
+		FB8C8D321DD1E211008A7995 /* MainAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D181DD1E211008A7995 /* MainAssembly.m */; };
+		FB8C8D331DD1E211008A7995 /* MainInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D1B1DD1E211008A7995 /* MainInteractor.m */; };
+		FB8C8D341DD1E212008A7995 /* MainInputData.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D221DD1E211008A7995 /* MainInputData.m */; };
+		FB8C8D351DD1E212008A7995 /* MainModels.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D241DD1E211008A7995 /* MainModels.m */; };
+		FB8C8D361DD1E212008A7995 /* MainPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D271DD1E211008A7995 /* MainPresenter.m */; };
+		FB8C8D371DD1E212008A7995 /* MainRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D2C1DD1E211008A7995 /* MainRouter.m */; };
+		FB8C8D381DD1E212008A7995 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D2F1DD1E211008A7995 /* MainViewController.m */; };
+		FB8C8D3A1DD1E21E008A7995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8C8D391DD1E21E008A7995 /* Main.storyboard */; };
 		FB9772991DD084810033B64E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9772981DD084810033B64E /* main.m */; };
 		FB97729C1DD084810033B64E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97729B1DD084810033B64E /* AppDelegate.m */; };
 		FB97729F1DD084810033B64E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97729E1DD084810033B64E /* ViewController.m */; };
-		FB9772A21DD084810033B64E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9772A01DD084810033B64E /* Main.storyboard */; };
-		FB9772A51DD084810033B64E /* VKWallReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB9772A31DD084810033B64E /* VKWallReader.xcdatamodeld */; };
 		FB9772A71DD084810033B64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9772A61DD084810033B64E /* Assets.xcassets */; };
 		FB9772AA1DD084810033B64E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9772A81DD084810033B64E /* LaunchScreen.storyboard */; };
 		FB9772B51DD084810033B64E /* VKWallReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9772B41DD084810033B64E /* VKWallReaderTests.m */; };
-		FB9772C91DD08D820033B64E /* NSThread+MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9772C51DD08D820033B64E /* NSThread+MainThread.m */; };
-		FB9772CA1DD08D820033B64E /* UIColor+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9772C71DD08D820033B64E /* UIColor+hex.m */; };
+		FBA1EDF01DD1EB19003F56ED /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDEF1DD1EB19003F56ED /* GroupModel.m */; };
+		FBA1EDF31DD1EB56003F56ED /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDF21DD1EB56003F56ED /* UserModel.m */; };
+		FBA1EDF71DD1EB8B003F56ED /* VKWallReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDF51DD1EB8B003F56ED /* VKWallReader.xcdatamodeld */; };
+		FBA1EDFA1DD1FAFC003F56ED /* MainDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDF91DD1FAFC003F56ED /* MainDataSource.m */; };
+		FBA1EE011DD1FB87003F56ED /* NSThread+MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDFD1DD1FB87003F56ED /* NSThread+MainThread.m */; };
+		FBA1EE021DD1FB87003F56ED /* UIColor+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDFF1DD1FB87003F56ED /* UIColor+hex.m */; };
+		FBA1EE091DD2035D003F56ED /* GroupDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EE081DD2035D003F56ED /* GroupDetailsCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,24 +50,55 @@
 		B5FB1A13571CF619A5855A47 /* Pods-VKWallReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKWallReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKWallReaderTests/Pods-VKWallReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE7E227FCAE4BD8010D849B3 /* libPods-VKWallReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKWallReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E601FB559F10C971378CE700 /* Pods-VKWallReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKWallReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKWallReader/Pods-VKWallReader.debug.xcconfig"; sourceTree = "<group>"; };
+		FB8C8C061DD1D578008A7995 /* Items.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Items.storyboard; sourceTree = "<group>"; };
+		FB8C8D171DD1E211008A7995 /* MainAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainAssembly.h; sourceTree = "<group>"; };
+		FB8C8D181DD1E211008A7995 /* MainAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainAssembly.m; sourceTree = "<group>"; };
+		FB8C8D1A1DD1E211008A7995 /* MainInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInteractor.h; sourceTree = "<group>"; };
+		FB8C8D1B1DD1E211008A7995 /* MainInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainInteractor.m; sourceTree = "<group>"; };
+		FB8C8D1C1DD1E211008A7995 /* MainInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInteractorInput.h; sourceTree = "<group>"; };
+		FB8C8D1D1DD1E211008A7995 /* MainInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInteractorOutput.h; sourceTree = "<group>"; };
+		FB8C8D1E1DD1E211008A7995 /* MainInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInput.h; sourceTree = "<group>"; };
+		FB8C8D1F1DD1E211008A7995 /* MainOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainOutput.h; sourceTree = "<group>"; };
+		FB8C8D211DD1E211008A7995 /* MainInputData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInputData.h; sourceTree = "<group>"; };
+		FB8C8D221DD1E211008A7995 /* MainInputData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainInputData.m; sourceTree = "<group>"; };
+		FB8C8D231DD1E211008A7995 /* MainModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModels.h; sourceTree = "<group>"; };
+		FB8C8D241DD1E211008A7995 /* MainModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModels.m; sourceTree = "<group>"; };
+		FB8C8D261DD1E211008A7995 /* MainPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPresenter.h; sourceTree = "<group>"; };
+		FB8C8D271DD1E211008A7995 /* MainPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPresenter.m; sourceTree = "<group>"; };
+		FB8C8D281DD1E211008A7995 /* MainPresenterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPresenterInput.h; sourceTree = "<group>"; };
+		FB8C8D291DD1E211008A7995 /* MainPresenterOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPresenterOutput.h; sourceTree = "<group>"; };
+		FB8C8D2B1DD1E211008A7995 /* MainRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRouter.h; sourceTree = "<group>"; };
+		FB8C8D2C1DD1E211008A7995 /* MainRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRouter.m; sourceTree = "<group>"; };
+		FB8C8D2E1DD1E211008A7995 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FB8C8D2F1DD1E211008A7995 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FB8C8D301DD1E211008A7995 /* MainViewControllerInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewControllerInput.h; sourceTree = "<group>"; };
+		FB8C8D311DD1E211008A7995 /* MainViewControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewControllerOutput.h; sourceTree = "<group>"; };
+		FB8C8D391DD1E21E008A7995 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FB9772941DD084810033B64E /* VKWallReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKWallReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9772981DD084810033B64E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB97729A1DD084810033B64E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB97729B1DD084810033B64E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FB97729D1DD084810033B64E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FB97729E1DD084810033B64E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FB9772A11DD084810033B64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB9772A41DD084810033B64E /* VKWallReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKWallReader.xcdatamodel; sourceTree = "<group>"; };
 		FB9772A61DD084810033B64E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB9772A91DD084810033B64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB9772AB1DD084810033B64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB9772B01DD084810033B64E /* VKWallReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKWallReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9772B41DD084810033B64E /* VKWallReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKWallReaderTests.m; sourceTree = "<group>"; };
 		FB9772B61DD084810033B64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB9772C41DD08D820033B64E /* NSThread+MainThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+MainThread.h"; sourceTree = "<group>"; };
-		FB9772C51DD08D820033B64E /* NSThread+MainThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+MainThread.m"; sourceTree = "<group>"; };
-		FB9772C61DD08D820033B64E /* UIColor+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hex.h"; sourceTree = "<group>"; };
-		FB9772C71DD08D820033B64E /* UIColor+hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hex.m"; sourceTree = "<group>"; };
+		FBA1EDEE1DD1EB19003F56ED /* GroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupModel.h; sourceTree = "<group>"; };
+		FBA1EDEF1DD1EB19003F56ED /* GroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
+		FBA1EDF11DD1EB56003F56ED /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		FBA1EDF21DD1EB56003F56ED /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		FBA1EDF61DD1EB8B003F56ED /* VKWallReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKWallReader.xcdatamodel; sourceTree = "<group>"; };
+		FBA1EDF81DD1FAFC003F56ED /* MainDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDataSource.h; sourceTree = "<group>"; };
+		FBA1EDF91DD1FAFC003F56ED /* MainDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDataSource.m; sourceTree = "<group>"; };
+		FBA1EDFC1DD1FB87003F56ED /* NSThread+MainThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+MainThread.h"; sourceTree = "<group>"; };
+		FBA1EDFD1DD1FB87003F56ED /* NSThread+MainThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+MainThread.m"; sourceTree = "<group>"; };
+		FBA1EDFE1DD1FB87003F56ED /* UIColor+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hex.h"; sourceTree = "<group>"; };
+		FBA1EDFF1DD1FB87003F56ED /* UIColor+hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hex.m"; sourceTree = "<group>"; };
+		FBA1EE071DD2035D003F56ED /* GroupDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupDetailsCell.h; sourceTree = "<group>"; };
+		FBA1EE081DD2035D003F56ED /* GroupDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupDetailsCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +141,86 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB8C8D151DD1E211008A7995 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C8D161DD1E211008A7995 /* Assembly */,
+				FB8C8D191DD1E211008A7995 /* Interactor */,
+				FB8C8D1E1DD1E211008A7995 /* MainInput.h */,
+				FB8C8D1F1DD1E211008A7995 /* MainOutput.h */,
+				FB8C8D201DD1E211008A7995 /* Models */,
+				FB8C8D251DD1E211008A7995 /* Presenter */,
+				FB8C8D2A1DD1E211008A7995 /* Router */,
+				FB8C8D2D1DD1E211008A7995 /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FB8C8D161DD1E211008A7995 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C8D171DD1E211008A7995 /* MainAssembly.h */,
+				FB8C8D181DD1E211008A7995 /* MainAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FB8C8D191DD1E211008A7995 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C8D1A1DD1E211008A7995 /* MainInteractor.h */,
+				FB8C8D1B1DD1E211008A7995 /* MainInteractor.m */,
+				FB8C8D1C1DD1E211008A7995 /* MainInteractorInput.h */,
+				FB8C8D1D1DD1E211008A7995 /* MainInteractorOutput.h */,
+				FBA1EDF81DD1FAFC003F56ED /* MainDataSource.h */,
+				FBA1EDF91DD1FAFC003F56ED /* MainDataSource.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FB8C8D201DD1E211008A7995 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C8D211DD1E211008A7995 /* MainInputData.h */,
+				FB8C8D221DD1E211008A7995 /* MainInputData.m */,
+				FB8C8D231DD1E211008A7995 /* MainModels.h */,
+				FB8C8D241DD1E211008A7995 /* MainModels.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB8C8D251DD1E211008A7995 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C8D261DD1E211008A7995 /* MainPresenter.h */,
+				FB8C8D271DD1E211008A7995 /* MainPresenter.m */,
+				FB8C8D281DD1E211008A7995 /* MainPresenterInput.h */,
+				FB8C8D291DD1E211008A7995 /* MainPresenterOutput.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FB8C8D2A1DD1E211008A7995 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C8D2B1DD1E211008A7995 /* MainRouter.h */,
+				FB8C8D2C1DD1E211008A7995 /* MainRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FB8C8D2D1DD1E211008A7995 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FBA1EE061DD2033B003F56ED /* Views */,
+				FB8C8D2E1DD1E211008A7995 /* MainViewController.h */,
+				FB8C8D2F1DD1E211008A7995 /* MainViewController.m */,
+				FB8C8D301DD1E211008A7995 /* MainViewControllerInput.h */,
+				FB8C8D311DD1E211008A7995 /* MainViewControllerOutput.h */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		FB97728B1DD084810033B64E = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +244,7 @@
 		FB9772961DD084810033B64E /* VKWallReader */ = {
 			isa = PBXGroup;
 			children = (
+				FBA1EDED1DD1EB06003F56ED /* Models */,
 				FB9772BF1DD08D820033B64E /* Resources */,
 				FB9772C01DD08D820033B64E /* Scenes */,
 				FB9772C11DD08D820033B64E /* Services */,
@@ -131,11 +255,9 @@
 				FB97729B1DD084810033B64E /* AppDelegate.m */,
 				FB97729D1DD084810033B64E /* ViewController.h */,
 				FB97729E1DD084810033B64E /* ViewController.m */,
-				FB9772A01DD084810033B64E /* Main.storyboard */,
 				FB9772A61DD084810033B64E /* Assets.xcassets */,
 				FB9772A81DD084810033B64E /* LaunchScreen.storyboard */,
 				FB9772AB1DD084810033B64E /* Info.plist */,
-				FB9772A31DD084810033B64E /* VKWallReader.xcdatamodeld */,
 				FB9772971DD084810033B64E /* Supporting Files */,
 			);
 			path = VKWallReader;
@@ -168,6 +290,7 @@
 		FB9772C01DD08D820033B64E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FB8C8D151DD1E211008A7995 /* Main */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -182,6 +305,8 @@
 		FB9772C21DD08D820033B64E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				FB8C8C061DD1D578008A7995 /* Items.storyboard */,
+				FB8C8D391DD1E21E008A7995 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -189,10 +314,7 @@
 		FB9772C31DD08D820033B64E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				FB9772C41DD08D820033B64E /* NSThread+MainThread.h */,
-				FB9772C51DD08D820033B64E /* NSThread+MainThread.m */,
-				FB9772C61DD08D820033B64E /* UIColor+hex.h */,
-				FB9772C71DD08D820033B64E /* UIColor+hex.m */,
+				FBA1EDFB1DD1FB87003F56ED /* Categories */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -202,6 +324,46 @@
 			children = (
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		FBA1EDED1DD1EB06003F56ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBA1EDF41DD1EB82003F56ED /* CoreData */,
+				FBA1EDEE1DD1EB19003F56ED /* GroupModel.h */,
+				FBA1EDEF1DD1EB19003F56ED /* GroupModel.m */,
+				FBA1EDF11DD1EB56003F56ED /* UserModel.h */,
+				FBA1EDF21DD1EB56003F56ED /* UserModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBA1EDF41DD1EB82003F56ED /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FBA1EDF51DD1EB8B003F56ED /* VKWallReader.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FBA1EDFB1DD1FB87003F56ED /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FBA1EDFC1DD1FB87003F56ED /* NSThread+MainThread.h */,
+				FBA1EDFD1DD1FB87003F56ED /* NSThread+MainThread.m */,
+				FBA1EDFE1DD1FB87003F56ED /* UIColor+hex.h */,
+				FBA1EDFF1DD1FB87003F56ED /* UIColor+hex.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		FBA1EE061DD2033B003F56ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBA1EE071DD2035D003F56ED /* GroupDetailsCell.h */,
+				FBA1EE081DD2035D003F56ED /* GroupDetailsCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +456,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8C8C071DD1D578008A7995 /* Items.storyboard in Resources */,
 				FB9772AA1DD084810033B64E /* LaunchScreen.storyboard in Resources */,
 				FB9772A71DD084810033B64E /* Assets.xcassets in Resources */,
-				FB9772A21DD084810033B64E /* Main.storyboard in Resources */,
+				FB8C8D3A1DD1E21E008A7995 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,10 +571,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB97729F1DD084810033B64E /* ViewController.m in Sources */,
-				FB9772CA1DD08D820033B64E /* UIColor+hex.m in Sources */,
-				FB9772A51DD084810033B64E /* VKWallReader.xcdatamodeld in Sources */,
-				FB9772C91DD08D820033B64E /* NSThread+MainThread.m in Sources */,
+				FBA1EE021DD1FB87003F56ED /* UIColor+hex.m in Sources */,
+				FBA1EDF01DD1EB19003F56ED /* GroupModel.m in Sources */,
+				FB8C8D331DD1E211008A7995 /* MainInteractor.m in Sources */,
+				FBA1EDF71DD1EB8B003F56ED /* VKWallReader.xcdatamodeld in Sources */,
+				FB8C8D351DD1E212008A7995 /* MainModels.m in Sources */,
+				FB8C8D361DD1E212008A7995 /* MainPresenter.m in Sources */,
 				FB97729C1DD084810033B64E /* AppDelegate.m in Sources */,
+				FB8C8D381DD1E212008A7995 /* MainViewController.m in Sources */,
+				FB8C8D371DD1E212008A7995 /* MainRouter.m in Sources */,
+				FBA1EDFA1DD1FAFC003F56ED /* MainDataSource.m in Sources */,
+				FBA1EDF31DD1EB56003F56ED /* UserModel.m in Sources */,
+				FB8C8D321DD1E211008A7995 /* MainAssembly.m in Sources */,
+				FBA1EE091DD2035D003F56ED /* GroupDetailsCell.m in Sources */,
+				FB8C8D341DD1E212008A7995 /* MainInputData.m in Sources */,
+				FBA1EE011DD1FB87003F56ED /* NSThread+MainThread.m in Sources */,
 				FB9772991DD084810033B64E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,14 +609,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB9772A01DD084810033B64E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB9772A11DD084810033B64E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB9772A81DD084810033B64E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -472,6 +638,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -520,6 +687,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -633,12 +801,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FB9772A31DD084810033B64E /* VKWallReader.xcdatamodeld */ = {
+		FBA1EDF51DD1EB8B003F56ED /* VKWallReader.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FB9772A41DD084810033B64E /* VKWallReader.xcdatamodel */,
+				FBA1EDF61DD1EB8B003F56ED /* VKWallReader.xcdatamodel */,
 			);
-			currentVersion = FB9772A41DD084810033B64E /* VKWallReader.xcdatamodel */;
+			currentVersion = FBA1EDF61DD1EB8B003F56ED /* VKWallReader.xcdatamodel */;
 			path = VKWallReader.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

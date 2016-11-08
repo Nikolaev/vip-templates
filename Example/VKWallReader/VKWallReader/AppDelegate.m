@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainAssembly.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self createMainController];
     return YES;
+}
+
+- (void) createMainController {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UIViewController *mainVC = [MainAssembly assembly];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    nvc.navigationBarHidden = YES;
+    self.window.rootViewController = nvc;
+    [self.window makeKeyAndVisible];
 }
 
 

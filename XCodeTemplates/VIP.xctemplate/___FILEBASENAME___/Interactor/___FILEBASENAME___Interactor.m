@@ -8,6 +8,10 @@
 
 #import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
 
+@interface ___FILEBASENAMEASIDENTIFIER___Interactor ()
+
+@end
+
 @implementation ___FILEBASENAMEASIDENTIFIER___Interactor
 
 #pragma mark - Initialization -
@@ -33,7 +37,10 @@
 
 #pragma mark -  ___FILEBASENAMEASIDENTIFIER___InteractorInput -
 
-
+- (void)requestInitialSetup
+{
+    
+}
 
 #pragma mark - Private -
 

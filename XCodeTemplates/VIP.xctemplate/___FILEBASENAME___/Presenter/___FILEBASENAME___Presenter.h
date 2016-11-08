@@ -1,17 +1,18 @@
 //
-//  {{ prefix }}{{ module_info.name }}Presenter.h
-//  {{ module_info.project_name }}
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by {{ developer.name }} on {{ date }}.
-//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
 //
+
 
 #import <Foundation/Foundation.h>
-#import "{{ prefix }}{{ module_info.name }}PresenterInput.h"
-#import "{{ prefix }}{{ module_info.name }}PresenterOutput.h"
+#import "___FILEBASENAMEASIDENTIFIER___PresenterInput.h"
+#import "___FILEBASENAMEASIDENTIFIER___PresenterOutput.h"
 
-@interface {{ prefix }}{{ module_info.name }}Presenter : NSObject <{{ prefix }}{{ module_info.name }}PresenterInput>
+@interface ___FILEBASENAMEASIDENTIFIER___Presenter : NSObject <___FILEBASENAMEASIDENTIFIER___PresenterInput>
 
-@property (weak, nonatomic) id<{{ prefix }}{{ module_info.name }}PresenterOutput> output;
+@property (weak, nonatomic) id<___FILEBASENAMEASIDENTIFIER___PresenterOutput> output;
 
 @end

@@ -1,14 +1,19 @@
 //
-//  {{ prefix }}{{ module_info.name }}Presenter.m
-//  {{ module_info.project_name }}
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by {{ developer.name }} on {{ date }}.
-//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
 //
 
-#import "{{ prefix }}{{ module_info.name }}Presenter.h"
 
-@implementation {{ prefix }}{{ module_info.name }}Presenter
+#import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
+
+@interface ___FILEBASENAMEASIDENTIFIER___Presenter ()
+
+@end
+
+@implementation ___FILEBASENAMEASIDENTIFIER___Presenter
 
 #pragma mark - Initialization -
 
@@ -31,7 +36,7 @@
 
 }
 
-#pragma mark -  {{ prefix }}{{ module_info.name }}PresenterInput -
+#pragma mark -  ___FILEBASENAMEASIDENTIFIER___PresenterInput -
 
 
 

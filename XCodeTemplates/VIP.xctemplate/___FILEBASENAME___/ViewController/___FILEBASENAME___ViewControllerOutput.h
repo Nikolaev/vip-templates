@@ -11,4 +11,6 @@
 
 @protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput <NSObject>
 
+- (void)requestInitialSetup;
+
 @end

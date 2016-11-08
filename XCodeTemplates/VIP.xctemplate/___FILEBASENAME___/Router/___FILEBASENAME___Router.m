@@ -9,6 +9,10 @@
 
 #import "___FILEBASENAMEASIDENTIFIER___Router.h"
 
+@interface ___FILEBASENAMEASIDENTIFIER___Router ()
+
+@end
+
 @implementation ___FILEBASENAMEASIDENTIFIER___Router
 
 #pragma mark - Initialization -
