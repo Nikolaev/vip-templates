@@ -9,6 +9,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class GroupModel;
+
 @protocol MainPresenterInput <NSObject>
+
+- (void)presentGroups:(NSArray<GroupModel *> *)groupsModels;
 
 @end

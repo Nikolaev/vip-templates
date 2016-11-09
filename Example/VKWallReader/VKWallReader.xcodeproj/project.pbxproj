@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		3D1F1E45919C73617F0DA931 /* libPods-VKWallReaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E90C0B0D8AC71D88B8153 /* libPods-VKWallReaderTests.a */; };
 		576247D5A14DFBB8CA94450D /* libPods-VKWallReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7E227FCAE4BD8010D849B3 /* libPods-VKWallReader.a */; };
+		FB3DE1081DD33AAB0048E494 /* GetGroupInfoWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE1071DD33AAB0048E494 /* GetGroupInfoWorker.m */; };
+		FB3DE10C1DD340850048E494 /* UpdateGroupInfoWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE10B1DD340850048E494 /* UpdateGroupInfoWorker.m */; };
+		FB3DE10F1DD341F60048E494 /* GroupEntity+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE10E1DD341F60048E494 /* GroupEntity+Additions.m */; };
+		FB3DE1131DD344D20048E494 /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE1121DD344D20048E494 /* GroupModel.m */; };
+		FB3DE1161DD344DC0048E494 /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE1151DD344DC0048E494 /* ProfileModel.m */; };
+		FB3DE1191DD344E80048E494 /* WallPostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE1181DD344E80048E494 /* WallPostModel.m */; };
+		FB3DE11C1DD34F370048E494 /* GetGroupsNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE11B1DD34F370048E494 /* GetGroupsNetworkTask.m */; };
 		FB8C8C071DD1D578008A7995 /* Items.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8C8C061DD1D578008A7995 /* Items.storyboard */; };
 		FB8C8D321DD1E211008A7995 /* MainAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D181DD1E211008A7995 /* MainAssembly.m */; };
 		FB8C8D331DD1E211008A7995 /* MainInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D1B1DD1E211008A7995 /* MainInteractor.m */; };
@@ -20,17 +27,28 @@
 		FB8C8D3A1DD1E21E008A7995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8C8D391DD1E21E008A7995 /* Main.storyboard */; };
 		FB9772991DD084810033B64E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9772981DD084810033B64E /* main.m */; };
 		FB97729C1DD084810033B64E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97729B1DD084810033B64E /* AppDelegate.m */; };
-		FB97729F1DD084810033B64E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB97729E1DD084810033B64E /* ViewController.m */; };
 		FB9772A71DD084810033B64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9772A61DD084810033B64E /* Assets.xcassets */; };
 		FB9772AA1DD084810033B64E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9772A81DD084810033B64E /* LaunchScreen.storyboard */; };
 		FB9772B51DD084810033B64E /* VKWallReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9772B41DD084810033B64E /* VKWallReaderTests.m */; };
-		FBA1EDF01DD1EB19003F56ED /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDEF1DD1EB19003F56ED /* GroupModel.m */; };
-		FBA1EDF31DD1EB56003F56ED /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDF21DD1EB56003F56ED /* UserModel.m */; };
 		FBA1EDF71DD1EB8B003F56ED /* VKWallReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDF51DD1EB8B003F56ED /* VKWallReader.xcdatamodeld */; };
-		FBA1EDFA1DD1FAFC003F56ED /* MainDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDF91DD1FAFC003F56ED /* MainDataSource.m */; };
 		FBA1EE011DD1FB87003F56ED /* NSThread+MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDFD1DD1FB87003F56ED /* NSThread+MainThread.m */; };
 		FBA1EE021DD1FB87003F56ED /* UIColor+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDFF1DD1FB87003F56ED /* UIColor+hex.m */; };
 		FBA1EE091DD2035D003F56ED /* GroupDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EE081DD2035D003F56ED /* GroupDetailsCell.m */; };
+		FBD46E6C1DD2F4790084EE09 /* BaseNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E1D1DD2F4790084EE09 /* BaseNetworkTask.m */; };
+		FBD46E6D1DD2F4790084EE09 /* NetworkTaskParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E211DD2F4790084EE09 /* NetworkTaskParametersModel.m */; };
+		FBD46E6E1DD2F4790084EE09 /* NetworkTaskParameterValidationRule+Rules.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E231DD2F4790084EE09 /* NetworkTaskParameterValidationRule+Rules.m */; };
+		FBD46E6F1DD2F4790084EE09 /* NetworkTaskParameterValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E251DD2F4790084EE09 /* NetworkTaskParameterValidationRule.m */; };
+		FBD46E701DD2F4790084EE09 /* TaskCancellationToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E271DD2F4790084EE09 /* TaskCancellationToken.m */; };
+		FBD46E8D1DD2F4790084EE09 /* MyRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E671DD2F4790084EE09 /* MyRequestSerializer.m */; };
+		FBD46E8E1DD2F4790084EE09 /* MyResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E691DD2F4790084EE09 /* MyResponseSerializer.m */; };
+		FBD46E8F1DD2F4790084EE09 /* SessionManagerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E6B1DD2F4790084EE09 /* SessionManagerHelper.m */; };
+		FBD46E931DD2F60A0084EE09 /* ErrorsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E921DD2F60A0084EE09 /* ErrorsHelper.m */; };
+		FBD46E971DD2F6FE0084EE09 /* GetGroupNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E961DD2F6FE0084EE09 /* GetGroupNetworkTask.m */; };
+		FBD46E9A1DD2F7300084EE09 /* GroupNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E991DD2F7300084EE09 /* GroupNetworkModel.m */; };
+		FBD46E9D1DD2F8840084EE09 /* GetGroupWallNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E9C1DD2F8840084EE09 /* GetGroupWallNetworkTask.m */; };
+		FBD46EA01DD2F8A60084EE09 /* WallPostNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46E9F1DD2F8A60084EE09 /* WallPostNetworkModel.m */; };
+		FBD46EA31DD2F8B00084EE09 /* ProfileNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46EA21DD2F8B00084EE09 /* ProfileNetworkModel.m */; };
+		FBD46EA91DD30BA70084EE09 /* WallNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD46EA81DD30BA70084EE09 /* WallNetworkModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +68,20 @@
 		B5FB1A13571CF619A5855A47 /* Pods-VKWallReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKWallReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKWallReaderTests/Pods-VKWallReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE7E227FCAE4BD8010D849B3 /* libPods-VKWallReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKWallReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E601FB559F10C971378CE700 /* Pods-VKWallReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKWallReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKWallReader/Pods-VKWallReader.debug.xcconfig"; sourceTree = "<group>"; };
+		FB3DE1061DD33AAB0048E494 /* GetGroupInfoWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGroupInfoWorker.h; sourceTree = "<group>"; };
+		FB3DE1071DD33AAB0048E494 /* GetGroupInfoWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetGroupInfoWorker.m; sourceTree = "<group>"; };
+		FB3DE10A1DD340850048E494 /* UpdateGroupInfoWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateGroupInfoWorker.h; sourceTree = "<group>"; };
+		FB3DE10B1DD340850048E494 /* UpdateGroupInfoWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateGroupInfoWorker.m; sourceTree = "<group>"; };
+		FB3DE10D1DD341F60048E494 /* GroupEntity+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GroupEntity+Additions.h"; sourceTree = "<group>"; };
+		FB3DE10E1DD341F60048E494 /* GroupEntity+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GroupEntity+Additions.m"; sourceTree = "<group>"; };
+		FB3DE1111DD344D20048E494 /* GroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupModel.h; sourceTree = "<group>"; };
+		FB3DE1121DD344D20048E494 /* GroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
+		FB3DE1141DD344DC0048E494 /* ProfileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileModel.h; sourceTree = "<group>"; };
+		FB3DE1151DD344DC0048E494 /* ProfileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileModel.m; sourceTree = "<group>"; };
+		FB3DE1171DD344E80048E494 /* WallPostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPostModel.h; sourceTree = "<group>"; };
+		FB3DE1181DD344E80048E494 /* WallPostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPostModel.m; sourceTree = "<group>"; };
+		FB3DE11A1DD34F370048E494 /* GetGroupsNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGroupsNetworkTask.h; sourceTree = "<group>"; };
+		FB3DE11B1DD34F370048E494 /* GetGroupsNetworkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetGroupsNetworkTask.m; sourceTree = "<group>"; };
 		FB8C8C061DD1D578008A7995 /* Items.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Items.storyboard; sourceTree = "<group>"; };
 		FB8C8D171DD1E211008A7995 /* MainAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainAssembly.h; sourceTree = "<group>"; };
 		FB8C8D181DD1E211008A7995 /* MainAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainAssembly.m; sourceTree = "<group>"; };
@@ -78,27 +110,51 @@
 		FB9772981DD084810033B64E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB97729A1DD084810033B64E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB97729B1DD084810033B64E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB97729D1DD084810033B64E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FB97729E1DD084810033B64E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FB9772A61DD084810033B64E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB9772A91DD084810033B64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB9772AB1DD084810033B64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB9772B01DD084810033B64E /* VKWallReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKWallReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9772B41DD084810033B64E /* VKWallReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKWallReaderTests.m; sourceTree = "<group>"; };
 		FB9772B61DD084810033B64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBA1EDEE1DD1EB19003F56ED /* GroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupModel.h; sourceTree = "<group>"; };
-		FBA1EDEF1DD1EB19003F56ED /* GroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
-		FBA1EDF11DD1EB56003F56ED /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
-		FBA1EDF21DD1EB56003F56ED /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		FBA1EDF61DD1EB8B003F56ED /* VKWallReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKWallReader.xcdatamodel; sourceTree = "<group>"; };
-		FBA1EDF81DD1FAFC003F56ED /* MainDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDataSource.h; sourceTree = "<group>"; };
-		FBA1EDF91DD1FAFC003F56ED /* MainDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDataSource.m; sourceTree = "<group>"; };
 		FBA1EDFC1DD1FB87003F56ED /* NSThread+MainThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+MainThread.h"; sourceTree = "<group>"; };
 		FBA1EDFD1DD1FB87003F56ED /* NSThread+MainThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+MainThread.m"; sourceTree = "<group>"; };
 		FBA1EDFE1DD1FB87003F56ED /* UIColor+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hex.h"; sourceTree = "<group>"; };
 		FBA1EDFF1DD1FB87003F56ED /* UIColor+hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hex.m"; sourceTree = "<group>"; };
 		FBA1EE071DD2035D003F56ED /* GroupDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupDetailsCell.h; sourceTree = "<group>"; };
 		FBA1EE081DD2035D003F56ED /* GroupDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupDetailsCell.m; sourceTree = "<group>"; };
+		FBD46E1C1DD2F4790084EE09 /* BaseNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetworkTask.h; sourceTree = "<group>"; };
+		FBD46E1D1DD2F4790084EE09 /* BaseNetworkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworkTask.m; sourceTree = "<group>"; };
+		FBD46E1E1DD2F4790084EE09 /* BaseNetworkTask_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetworkTask_protected.h; sourceTree = "<group>"; };
+		FBD46E201DD2F4790084EE09 /* NetworkTaskParametersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTaskParametersModel.h; sourceTree = "<group>"; };
+		FBD46E211DD2F4790084EE09 /* NetworkTaskParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTaskParametersModel.m; sourceTree = "<group>"; };
+		FBD46E221DD2F4790084EE09 /* NetworkTaskParameterValidationRule+Rules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkTaskParameterValidationRule+Rules.h"; sourceTree = "<group>"; };
+		FBD46E231DD2F4790084EE09 /* NetworkTaskParameterValidationRule+Rules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkTaskParameterValidationRule+Rules.m"; sourceTree = "<group>"; };
+		FBD46E241DD2F4790084EE09 /* NetworkTaskParameterValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTaskParameterValidationRule.h; sourceTree = "<group>"; };
+		FBD46E251DD2F4790084EE09 /* NetworkTaskParameterValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTaskParameterValidationRule.m; sourceTree = "<group>"; };
+		FBD46E261DD2F4790084EE09 /* TaskCancellationToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCancellationToken.h; sourceTree = "<group>"; };
+		FBD46E271DD2F4790084EE09 /* TaskCancellationToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCancellationToken.m; sourceTree = "<group>"; };
+		FBD46E501DD2F4790084EE09 /* NetworkTaskAPIMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTaskAPIMethods.h; sourceTree = "<group>"; };
+		FBD46E661DD2F4790084EE09 /* MyRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRequestSerializer.h; sourceTree = "<group>"; };
+		FBD46E671DD2F4790084EE09 /* MyRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRequestSerializer.m; sourceTree = "<group>"; };
+		FBD46E681DD2F4790084EE09 /* MyResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyResponseSerializer.h; sourceTree = "<group>"; };
+		FBD46E691DD2F4790084EE09 /* MyResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyResponseSerializer.m; sourceTree = "<group>"; };
+		FBD46E6A1DD2F4790084EE09 /* SessionManagerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManagerHelper.h; sourceTree = "<group>"; };
+		FBD46E6B1DD2F4790084EE09 /* SessionManagerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManagerHelper.m; sourceTree = "<group>"; };
+		FBD46E911DD2F60A0084EE09 /* ErrorsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorsHelper.h; sourceTree = "<group>"; };
+		FBD46E921DD2F60A0084EE09 /* ErrorsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorsHelper.m; sourceTree = "<group>"; };
+		FBD46E951DD2F6FE0084EE09 /* GetGroupNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGroupNetworkTask.h; sourceTree = "<group>"; };
+		FBD46E961DD2F6FE0084EE09 /* GetGroupNetworkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetGroupNetworkTask.m; sourceTree = "<group>"; };
+		FBD46E981DD2F7300084EE09 /* GroupNetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupNetworkModel.h; sourceTree = "<group>"; };
+		FBD46E991DD2F7300084EE09 /* GroupNetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupNetworkModel.m; sourceTree = "<group>"; };
+		FBD46E9B1DD2F8840084EE09 /* GetGroupWallNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGroupWallNetworkTask.h; sourceTree = "<group>"; };
+		FBD46E9C1DD2F8840084EE09 /* GetGroupWallNetworkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetGroupWallNetworkTask.m; sourceTree = "<group>"; };
+		FBD46E9E1DD2F8A60084EE09 /* WallPostNetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPostNetworkModel.h; sourceTree = "<group>"; };
+		FBD46E9F1DD2F8A60084EE09 /* WallPostNetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPostNetworkModel.m; sourceTree = "<group>"; };
+		FBD46EA11DD2F8B00084EE09 /* ProfileNetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileNetworkModel.h; sourceTree = "<group>"; };
+		FBD46EA21DD2F8B00084EE09 /* ProfileNetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileNetworkModel.m; sourceTree = "<group>"; };
+		FBD46EA71DD30BA70084EE09 /* WallNetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallNetworkModel.h; sourceTree = "<group>"; };
+		FBD46EA81DD30BA70084EE09 /* WallNetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallNetworkModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +197,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB3DE1101DD344770048E494 /* PONS */ = {
+			isa = PBXGroup;
+			children = (
+				FB3DE1111DD344D20048E494 /* GroupModel.h */,
+				FB3DE1121DD344D20048E494 /* GroupModel.m */,
+				FB3DE1141DD344DC0048E494 /* ProfileModel.h */,
+				FB3DE1151DD344DC0048E494 /* ProfileModel.m */,
+				FB3DE1171DD344E80048E494 /* WallPostModel.h */,
+				FB3DE1181DD344E80048E494 /* WallPostModel.m */,
+			);
+			path = PONS;
+			sourceTree = "<group>";
+		};
 		FB8C8D151DD1E211008A7995 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,8 +241,6 @@
 				FB8C8D1B1DD1E211008A7995 /* MainInteractor.m */,
 				FB8C8D1C1DD1E211008A7995 /* MainInteractorInput.h */,
 				FB8C8D1D1DD1E211008A7995 /* MainInteractorOutput.h */,
-				FBA1EDF81DD1FAFC003F56ED /* MainDataSource.h */,
-				FBA1EDF91DD1FAFC003F56ED /* MainDataSource.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -253,8 +320,6 @@
 				FB9772C81DD08D820033B64E /* Workers */,
 				FB97729A1DD084810033B64E /* AppDelegate.h */,
 				FB97729B1DD084810033B64E /* AppDelegate.m */,
-				FB97729D1DD084810033B64E /* ViewController.h */,
-				FB97729E1DD084810033B64E /* ViewController.m */,
 				FB9772A61DD084810033B64E /* Assets.xcassets */,
 				FB9772A81DD084810033B64E /* LaunchScreen.storyboard */,
 				FB9772AB1DD084810033B64E /* Info.plist */,
@@ -298,6 +363,7 @@
 		FB9772C11DD08D820033B64E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FBD46E191DD2F4790084EE09 /* NetworkService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -314,6 +380,7 @@
 		FB9772C31DD08D820033B64E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FBD46E901DD2F60A0084EE09 /* ErrorsHelper */,
 				FBA1EDFB1DD1FB87003F56ED /* Categories */,
 			);
 			path = Utils;
@@ -322,6 +389,10 @@
 		FB9772C81DD08D820033B64E /* Workers */ = {
 			isa = PBXGroup;
 			children = (
+				FB3DE1061DD33AAB0048E494 /* GetGroupInfoWorker.h */,
+				FB3DE1071DD33AAB0048E494 /* GetGroupInfoWorker.m */,
+				FB3DE10A1DD340850048E494 /* UpdateGroupInfoWorker.h */,
+				FB3DE10B1DD340850048E494 /* UpdateGroupInfoWorker.m */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -329,11 +400,8 @@
 		FBA1EDED1DD1EB06003F56ED /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FB3DE1101DD344770048E494 /* PONS */,
 				FBA1EDF41DD1EB82003F56ED /* CoreData */,
-				FBA1EDEE1DD1EB19003F56ED /* GroupModel.h */,
-				FBA1EDEF1DD1EB19003F56ED /* GroupModel.m */,
-				FBA1EDF11DD1EB56003F56ED /* UserModel.h */,
-				FBA1EDF21DD1EB56003F56ED /* UserModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -342,6 +410,8 @@
 			isa = PBXGroup;
 			children = (
 				FBA1EDF51DD1EB8B003F56ED /* VKWallReader.xcdatamodeld */,
+				FB3DE10D1DD341F60048E494 /* GroupEntity+Additions.h */,
+				FB3DE10E1DD341F60048E494 /* GroupEntity+Additions.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -364,6 +434,102 @@
 				FBA1EE081DD2035D003F56ED /* GroupDetailsCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FBD46E191DD2F4790084EE09 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				FBD46E1A1DD2F4790084EE09 /* NetworkTasks */,
+				FBD46E651DD2F4790084EE09 /* SessionManagerHelper */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		FBD46E1A1DD2F4790084EE09 /* NetworkTasks */ = {
+			isa = PBXGroup;
+			children = (
+				FBD46E311DD2F4790084EE09 /* NetworkModels */,
+				FBD46E1B1DD2F4790084EE09 /* BaseNetworkTask */,
+				FBD46E941DD2F6E70084EE09 /* Group */,
+				FBD46E501DD2F4790084EE09 /* NetworkTaskAPIMethods.h */,
+			);
+			path = NetworkTasks;
+			sourceTree = "<group>";
+		};
+		FBD46E1B1DD2F4790084EE09 /* BaseNetworkTask */ = {
+			isa = PBXGroup;
+			children = (
+				FBD46E1C1DD2F4790084EE09 /* BaseNetworkTask.h */,
+				FBD46E1D1DD2F4790084EE09 /* BaseNetworkTask.m */,
+				FBD46E1E1DD2F4790084EE09 /* BaseNetworkTask_protected.h */,
+				FBD46E1F1DD2F4790084EE09 /* ParametersModel */,
+				FBD46E261DD2F4790084EE09 /* TaskCancellationToken.h */,
+				FBD46E271DD2F4790084EE09 /* TaskCancellationToken.m */,
+			);
+			path = BaseNetworkTask;
+			sourceTree = "<group>";
+		};
+		FBD46E1F1DD2F4790084EE09 /* ParametersModel */ = {
+			isa = PBXGroup;
+			children = (
+				FBD46E201DD2F4790084EE09 /* NetworkTaskParametersModel.h */,
+				FBD46E211DD2F4790084EE09 /* NetworkTaskParametersModel.m */,
+				FBD46E221DD2F4790084EE09 /* NetworkTaskParameterValidationRule+Rules.h */,
+				FBD46E231DD2F4790084EE09 /* NetworkTaskParameterValidationRule+Rules.m */,
+				FBD46E241DD2F4790084EE09 /* NetworkTaskParameterValidationRule.h */,
+				FBD46E251DD2F4790084EE09 /* NetworkTaskParameterValidationRule.m */,
+			);
+			path = ParametersModel;
+			sourceTree = "<group>";
+		};
+		FBD46E311DD2F4790084EE09 /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				FBD46E981DD2F7300084EE09 /* GroupNetworkModel.h */,
+				FBD46E991DD2F7300084EE09 /* GroupNetworkModel.m */,
+				FBD46EA71DD30BA70084EE09 /* WallNetworkModel.h */,
+				FBD46EA81DD30BA70084EE09 /* WallNetworkModel.m */,
+				FBD46E9E1DD2F8A60084EE09 /* WallPostNetworkModel.h */,
+				FBD46E9F1DD2F8A60084EE09 /* WallPostNetworkModel.m */,
+				FBD46EA11DD2F8B00084EE09 /* ProfileNetworkModel.h */,
+				FBD46EA21DD2F8B00084EE09 /* ProfileNetworkModel.m */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		FBD46E651DD2F4790084EE09 /* SessionManagerHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FBD46E661DD2F4790084EE09 /* MyRequestSerializer.h */,
+				FBD46E671DD2F4790084EE09 /* MyRequestSerializer.m */,
+				FBD46E681DD2F4790084EE09 /* MyResponseSerializer.h */,
+				FBD46E691DD2F4790084EE09 /* MyResponseSerializer.m */,
+				FBD46E6A1DD2F4790084EE09 /* SessionManagerHelper.h */,
+				FBD46E6B1DD2F4790084EE09 /* SessionManagerHelper.m */,
+			);
+			path = SessionManagerHelper;
+			sourceTree = "<group>";
+		};
+		FBD46E901DD2F60A0084EE09 /* ErrorsHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FBD46E911DD2F60A0084EE09 /* ErrorsHelper.h */,
+				FBD46E921DD2F60A0084EE09 /* ErrorsHelper.m */,
+			);
+			path = ErrorsHelper;
+			sourceTree = "<group>";
+		};
+		FBD46E941DD2F6E70084EE09 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				FBD46E951DD2F6FE0084EE09 /* GetGroupNetworkTask.h */,
+				FBD46E961DD2F6FE0084EE09 /* GetGroupNetworkTask.m */,
+				FBD46E9B1DD2F8840084EE09 /* GetGroupWallNetworkTask.h */,
+				FBD46E9C1DD2F8840084EE09 /* GetGroupWallNetworkTask.m */,
+				FB3DE11A1DD34F370048E494 /* GetGroupsNetworkTask.h */,
+				FB3DE11B1DD34F370048E494 /* GetGroupsNetworkTask.m */,
+			);
+			path = Group;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,23 +736,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB97729F1DD084810033B64E /* ViewController.m in Sources */,
 				FBA1EE021DD1FB87003F56ED /* UIColor+hex.m in Sources */,
-				FBA1EDF01DD1EB19003F56ED /* GroupModel.m in Sources */,
+				FB3DE11C1DD34F370048E494 /* GetGroupsNetworkTask.m in Sources */,
+				FB3DE1081DD33AAB0048E494 /* GetGroupInfoWorker.m in Sources */,
 				FB8C8D331DD1E211008A7995 /* MainInteractor.m in Sources */,
+				FB3DE1131DD344D20048E494 /* GroupModel.m in Sources */,
 				FBA1EDF71DD1EB8B003F56ED /* VKWallReader.xcdatamodeld in Sources */,
+				FBD46EA31DD2F8B00084EE09 /* ProfileNetworkModel.m in Sources */,
+				FB3DE10F1DD341F60048E494 /* GroupEntity+Additions.m in Sources */,
 				FB8C8D351DD1E212008A7995 /* MainModels.m in Sources */,
+				FBD46E701DD2F4790084EE09 /* TaskCancellationToken.m in Sources */,
+				FBD46E931DD2F60A0084EE09 /* ErrorsHelper.m in Sources */,
+				FBD46E9D1DD2F8840084EE09 /* GetGroupWallNetworkTask.m in Sources */,
 				FB8C8D361DD1E212008A7995 /* MainPresenter.m in Sources */,
 				FB97729C1DD084810033B64E /* AppDelegate.m in Sources */,
+				FBD46E8F1DD2F4790084EE09 /* SessionManagerHelper.m in Sources */,
 				FB8C8D381DD1E212008A7995 /* MainViewController.m in Sources */,
+				FBD46E6D1DD2F4790084EE09 /* NetworkTaskParametersModel.m in Sources */,
+				FB3DE1191DD344E80048E494 /* WallPostModel.m in Sources */,
+				FBD46E971DD2F6FE0084EE09 /* GetGroupNetworkTask.m in Sources */,
 				FB8C8D371DD1E212008A7995 /* MainRouter.m in Sources */,
-				FBA1EDFA1DD1FAFC003F56ED /* MainDataSource.m in Sources */,
-				FBA1EDF31DD1EB56003F56ED /* UserModel.m in Sources */,
+				FBD46E8D1DD2F4790084EE09 /* MyRequestSerializer.m in Sources */,
 				FB8C8D321DD1E211008A7995 /* MainAssembly.m in Sources */,
+				FB3DE1161DD344DC0048E494 /* ProfileModel.m in Sources */,
+				FBD46E6C1DD2F4790084EE09 /* BaseNetworkTask.m in Sources */,
 				FBA1EE091DD2035D003F56ED /* GroupDetailsCell.m in Sources */,
+				FBD46E6E1DD2F4790084EE09 /* NetworkTaskParameterValidationRule+Rules.m in Sources */,
+				FBD46EA91DD30BA70084EE09 /* WallNetworkModel.m in Sources */,
+				FBD46E8E1DD2F4790084EE09 /* MyResponseSerializer.m in Sources */,
+				FBD46E6F1DD2F4790084EE09 /* NetworkTaskParameterValidationRule.m in Sources */,
 				FB8C8D341DD1E212008A7995 /* MainInputData.m in Sources */,
 				FBA1EE011DD1FB87003F56ED /* NSThread+MainThread.m in Sources */,
+				FB3DE10C1DD340850048E494 /* UpdateGroupInfoWorker.m in Sources */,
+				FBD46EA01DD2F8A60084EE09 /* WallPostNetworkModel.m in Sources */,
 				FB9772991DD084810033B64E /* main.m in Sources */,
+				FBD46E9A1DD2F7300084EE09 /* GroupNetworkModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

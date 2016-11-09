@@ -8,6 +8,8 @@
 
 
 #import "MainPresenter.h"
+#import "GroupModel.h"
+#import "MainModels.h"
 
 @implementation MainPresenter
 
@@ -34,7 +36,17 @@
 
 #pragma mark -  MainPresenterInput -
 
-
+- (void)presentGroups:(NSArray<GroupModel *> *)groupsModels
+{
+    NSMutableArray<MainGroupViewModel *> *vms = [NSMutableArray array];
+    [groupsModels enumerateObjectsUsingBlock:^(GroupModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        MainGroupViewModel *vm = [MainGroupViewModel new];
+        vm.name = obj.name;
+        vm.avatarURL = obj.photoURL;
+        [vms addObject:vm];
+    }];
+    [self.output displayGroups:vms];
+}
 
 #pragma mark - Private -
 

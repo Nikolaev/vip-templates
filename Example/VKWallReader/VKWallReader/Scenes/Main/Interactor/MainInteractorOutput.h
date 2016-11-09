@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class GroupModel;
+
 @protocol MainInteractorOutput <NSObject>
+
+- (void)presentGroups:(NSArray<GroupModel *> *)groupsModels;
 
 @end

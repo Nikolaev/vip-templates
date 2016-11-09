@@ -9,6 +9,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class MainGroupViewModel;
+
 @protocol MainPresenterOutput <NSObject>
+
+- (void)displayGroups:(NSArray<MainGroupViewModel *> *)groupsViews;
 
 @end

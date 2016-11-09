@@ -12,5 +12,6 @@
 @protocol MainViewControllerOutput <NSObject>
 
 - (void)requestInitialSetup;
+- (void)requestGroupsUpdate;
 
 @end

@@ -12,6 +12,6 @@
 
 @interface MainInteractor : NSObject <MainInteractorInput>
 
-@property (weak, nonatomic) id<MainInteractorOutput> output;
+@property (strong, nonatomic) id<MainInteractorOutput> output;
 
 @end

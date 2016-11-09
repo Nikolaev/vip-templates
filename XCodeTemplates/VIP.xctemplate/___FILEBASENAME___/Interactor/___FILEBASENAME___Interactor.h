@@ -12,6 +12,6 @@
 
 @interface ___FILEBASENAMEASIDENTIFIER___Interactor : NSObject <___FILEBASENAMEASIDENTIFIER___InteractorInput>
 
-@property (weak, nonatomic) id<___FILEBASENAMEASIDENTIFIER___InteractorOutput> output;
+@property (strong, nonatomic) id<___FILEBASENAMEASIDENTIFIER___InteractorOutput> output;
 
 @end

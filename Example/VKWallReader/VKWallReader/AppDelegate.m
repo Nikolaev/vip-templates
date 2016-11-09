@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MainAssembly.h"
+#import "SessionManagerHelper.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [MagicalRecord setupAutoMigratingCoreDataStack];
+    [SessionManagerHelper setBaseURL:@"https://api.vk.com/method"];
     [self createMainController];
     return YES;
 }

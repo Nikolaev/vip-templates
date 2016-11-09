@@ -11,5 +11,6 @@
 @protocol MainInteractorInput <NSObject>
 
 - (void)requestInitialSetup;
+- (void)requestGroupsUpdate;
 
 @end

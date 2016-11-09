@@ -24,6 +24,7 @@ PODS:
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
+  - MJRefresh (3.1.12)
   - PureLayout (3.0.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - Bolts
   - JSONModel
   - MagicalRecord
+  - MJRefresh
   - PureLayout
   - SDWebImage (~> 3.6)
 
@@ -42,9 +44,10 @@ SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: a2d3e1afd75f29429d2591bed51a131d38f4de5a
+PODFILE CHECKSUM: 79dfa646b5d19c9d0003aad9df0ad30bd560c4fe
 
 COCOAPODS: 1.1.1

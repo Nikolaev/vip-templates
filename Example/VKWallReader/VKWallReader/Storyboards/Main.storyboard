@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fVs-kd-qY1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LoV-sZ-JUK" id="d0Q-3b-NgB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13M-vW-6ZU">
@@ -44,8 +44,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jbC-KJ-j5u">
+                                                    <rect key="frame" x="22" y="13" width="20" height="20"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="jbC-KJ-j5u" firstAttribute="centerX" secondItem="13M-vW-6ZU" secondAttribute="centerX" id="7Tg-K3-ASc"/>
+                                                <constraint firstItem="jbC-KJ-j5u" firstAttribute="centerY" secondItem="13M-vW-6ZU" secondAttribute="centerY" id="LxT-ZG-Onl"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="13M-vW-6ZU" secondAttribute="bottom" constant="5" id="NIG-pI-v1O"/>
                                                 <constraint firstItem="13M-vW-6ZU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d0Q-3b-NgB" secondAttribute="top" constant="5" id="cuY-TH-s7k"/>
                                                 <constraint firstItem="13M-vW-6ZU" firstAttribute="centerY" secondItem="d0Q-3b-NgB" secondAttribute="centerY" id="eah-cH-3YF"/>
@@ -57,11 +62,16 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="activityIndicator" destination="jbC-KJ-j5u" id="3vd-Cv-yGS"/>
                                             <outlet property="ivIcon" destination="13M-vW-6ZU" id="y7U-tJ-nXG"/>
                                             <outlet property="lblName" destination="ans-Sh-umo" id="53B-Ox-iVn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fVs-kd-qY1" id="Bz2-uD-4YM"/>
+                                    <outlet property="delegate" destination="fVs-kd-qY1" id="jk9-uN-j7w"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,6 +82,9 @@
                             <constraint firstAttribute="trailing" secondItem="8sy-LB-C2a" secondAttribute="trailing" id="V75-Cq-RoN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="groupsTableView" destination="8sy-LB-C2a" id="Qi6-Fx-fMv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZi-5t-lHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

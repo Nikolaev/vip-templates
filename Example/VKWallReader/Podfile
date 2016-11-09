@@ -12,6 +12,7 @@ pod 'MagicalRecord'
 pod 'PureLayout'
 pod 'SDWebImage', '~>3.6'
 pod 'Bolts'
+pod 'MJRefresh'
 
   target 'VKWallReaderTests' do
     inherit! :search_paths
