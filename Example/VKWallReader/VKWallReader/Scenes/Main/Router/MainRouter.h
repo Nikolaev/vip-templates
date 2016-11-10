@@ -14,4 +14,6 @@
 
 @property (weak, nonatomic) UIViewController *viewController;
 
+- (void)presentWallOfGroupWithID:(NSString *)groupId;
+
 @end

@@ -8,7 +8,10 @@
 
 #import <JSONModel/JSONModel.h>
 
-@interface GroupNetworkModel : JSONModel
+@protocol GroupNetworkModel <NSObject>
+@end
+
+@interface GroupNetworkModel : JSONModel <GroupNetworkModel>
 
 @property (strong, nonatomic) NSString *gid;
 @property (strong, nonatomic) NSString *name;

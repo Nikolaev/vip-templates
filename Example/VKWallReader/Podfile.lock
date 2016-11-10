@@ -25,6 +25,7 @@ PODS:
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
   - MJRefresh (3.1.12)
+  - OCMock (3.3.1)
   - PureLayout (3.0.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - JSONModel
   - MagicalRecord
   - MJRefresh
+  - OCMock
   - PureLayout
   - SDWebImage (~> 3.6)
 
@@ -45,9 +47,10 @@ SPEC CHECKSUMS:
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 79dfa646b5d19c9d0003aad9df0ad30bd560c4fe
+PODFILE CHECKSUM: 3a86065bd545de439da51b9f4706363b621bd5f7
 
 COCOAPODS: 1.1.1

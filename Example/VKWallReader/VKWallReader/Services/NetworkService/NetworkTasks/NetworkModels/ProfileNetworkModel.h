@@ -8,9 +8,12 @@
 
 #import <JSONModel/JSONModel.h>
 
-@interface ProfileNetworkModel : JSONModel
+@protocol ProfileNetworkModel <NSObject>
+@end
 
-@property (nonatomic, assign) NSInteger uid;
+@interface ProfileNetworkModel : JSONModel <ProfileNetworkModel>
+
+@property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) NSString *firstName;
 @property (nonatomic, strong) NSString *lastName;
 @property (nonatomic, strong) NSString *avatarURL;

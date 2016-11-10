@@ -33,7 +33,7 @@
 
 - (void)updateWithModel:(MainGroupViewModel *)model
 {
-    self.lblName.text = model.name;
+    self.lblName.text = [[model.name stringByAppendingString:model.name] stringByAppendingString:model.name];
     NSURL *url = [NSURL URLWithString:model.avatarURL];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     self.activityIndicator.hidden = NO;

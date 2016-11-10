@@ -13,5 +13,7 @@
 
 - (void)requestInitialSetup;
 - (void)requestGroupsUpdate;
+- (void)requestSelectGroupAtIndex:(NSUInteger)index;
+
 
 @end

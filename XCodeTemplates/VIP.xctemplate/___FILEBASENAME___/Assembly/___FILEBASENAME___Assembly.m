@@ -70,9 +70,9 @@
     
     ___FILEBASENAMEASIDENTIFIER___Interactor *interactor = [___FILEBASENAMEASIDENTIFIER___Interactor new];
     interactor.output = (id<___FILEBASENAMEASIDENTIFIER___InteractorOutput>)presenter;
+    interactor.router = router;
     
     viewController.output = (id<___FILEBASENAMEASIDENTIFIER___ViewControllerOutput>)interactor;
-    viewController.router = router;
 
     return viewController;
 }

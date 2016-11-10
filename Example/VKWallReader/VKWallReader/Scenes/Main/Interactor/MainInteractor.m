@@ -10,6 +10,7 @@
 #import "GetGroupInfoWorker.h"
 #import "UpdateGroupInfoWorker.h"
 #import "MainModels.h"
+#import "MainRouter.h"
 
 @interface MainInteractor ()
 
@@ -55,6 +56,12 @@
     [self updateGroups];
 }
 
+- (void)requestSelectGroupAtIndex:(NSUInteger)index
+{
+    GroupModel *group = self.groups[index];
+    [self.router presentWallOfGroupWithID:group.uid];
+}
+
 #pragma mark - Private -
 
 - (void)updateGroups
@@ -62,7 +69,12 @@
     UpdateGroupInfoWorker *updateWorker = [UpdateGroupInfoWorker new];
     __weak typeof(self) wself = self;
     [updateWorker updateGroupsWithIds:self.groupUIDS callback:^(NSArray<GroupModel *> *groups, NSError *error) {
-        [wself groupsUpdated];
+        if (error == nil) {
+            [wself groupsUpdated];
+        } else {
+            [wself groupsUpdated];
+            //TODO: display error
+        }
     }];
 }
 

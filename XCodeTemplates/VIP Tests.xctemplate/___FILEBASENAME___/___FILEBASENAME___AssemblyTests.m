@@ -47,19 +47,19 @@
 - (void)testThatAssemblyCreatedAllItems
 {
     //given
-    UIViewController *vc = [___FILEBASENAME___Assembly instantiateViewController];
-    ___FILEBASENAME___ViewController *___FILEBASENAME___VC = (___FILEBASENAME___ViewController*)[___FILEBASENAME___Assembly assembly:vc];
-    ___FILEBASENAME___Interactor *interactor = (___FILEBASENAME___Interactor*)___FILEBASENAME___VC.output;
+    ___FILEBASENAME___ViewController *vc = (___FILEBASENAME___ViewController*)[___FILEBASENAME___Assembly instantiateViewController];
+    [___FILEBASENAME___Assembly assembly:vc];
+    ___FILEBASENAME___Interactor *interactor = (___FILEBASENAME___Interactor*)vc.output;
     ___FILEBASENAME___Presenter *presenter = (___FILEBASENAME___Presenter *)interactor.output;
     
     //then
-    XCTAssertNotNil(___FILEBASENAME___VC.output, @"view controller must have output");
-    XCTAssertNotNil(___FILEBASENAME___VC.router, @"view controller must have router");
+    XCTAssertNotNil(vc.output, @"view controller must have output");
     XCTAssertNotNil(interactor.output, @"interactor must have output");
+    XCTAssertNotNil(interactor.router, @"interactor must have router");
     XCTAssertNotNil(presenter.output, @"presenter must have output");
     XCTAssertTrue([interactor isKindOfClass:[___FILEBASENAME___Interactor class]], @"interactor must be kind of class %@", NSStringFromClass([___FILEBASENAME___Interactor class]));
     XCTAssertTrue([presenter isKindOfClass:[___FILEBASENAME___Presenter class]], @"presenter must be kind of class %@", NSStringFromClass([___FILEBASENAME___Presenter class]));
-    XCTAssertTrue([___FILEBASENAME___VC.router isKindOfClass:[___FILEBASENAME___Router class]], @"router must be kind of class %@", NSStringFromClass([___FILEBASENAME___Router class]));
+    XCTAssertTrue([interactor.router isKindOfClass:[___FILEBASENAME___Router class]], @"router must be kind of class %@", NSStringFromClass([___FILEBASENAME___Router class]));
 }
 
 @end

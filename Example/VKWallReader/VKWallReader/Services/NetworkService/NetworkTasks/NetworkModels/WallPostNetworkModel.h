@@ -8,11 +8,16 @@
 
 #import <JSONModel/JSONModel.h>
 
-@interface WallPostNetworkModel : JSONModel
+@protocol WallPostNetworkModel <NSObject>
+@end
+
+@interface WallPostNetworkModel : JSONModel <WallPostNetworkModel>
 
 @property (strong, nonatomic) NSString *uid;
 @property (strong, nonatomic) NSString *posterID;
 @property (strong, nonatomic) NSString *text;
 @property (strong, nonatomic) NSString *photoURL;
+@property (strong, nonatomic) NSNumber *photoWidth;
+@property (strong, nonatomic) NSNumber *photoHeight;
 
 @end

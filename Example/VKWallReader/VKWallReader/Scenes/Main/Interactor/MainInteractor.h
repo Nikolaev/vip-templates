@@ -10,8 +10,11 @@
 #import "MainInteractorInput.h"
 #import "MainInteractorOutput.h"
 
+@class MainRouter;
+
 @interface MainInteractor : NSObject <MainInteractorInput>
 
 @property (strong, nonatomic) id<MainInteractorOutput> output;
+@property (strong, nonatomic) MainRouter *router;
 
 @end

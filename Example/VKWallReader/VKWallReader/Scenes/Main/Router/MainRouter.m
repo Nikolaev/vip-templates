@@ -8,6 +8,8 @@
 
 
 #import "MainRouter.h"
+#import "GroupWallAssembly.h"
+@import UIKit;
 
 @implementation MainRouter
 
@@ -30,6 +32,14 @@
 - (void)dealloc
 {
 
+}
+
+- (void)presentWallOfGroupWithID:(NSString *)groupId
+{
+    GroupWallInputData *data = [GroupWallInputData new];
+    data.groupId = groupId;
+    UIViewController *vc = [GroupWallAssembly assemblyWithInputData:data];
+    [self.viewController.navigationController pushViewController:vc animated:YES];
 }
 
 

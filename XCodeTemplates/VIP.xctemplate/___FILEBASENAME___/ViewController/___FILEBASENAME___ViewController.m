@@ -8,7 +8,6 @@
 
 
 #import "___FILEBASENAMEASIDENTIFIER___ViewController.h"
-#import "___FILEBASENAMEASIDENTIFIER___Router.h"
 #import "___FILEBASENAMEASIDENTIFIER___Assembly.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ViewController ()

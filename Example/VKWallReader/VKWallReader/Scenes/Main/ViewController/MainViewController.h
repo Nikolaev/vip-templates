@@ -12,11 +12,8 @@
 #import "MainViewControllerInput.h"
 #import "MainViewControllerOutput.h"
 
-@class MainRouter;
-
 @interface MainViewController : UIViewController <MainInput, MainViewControllerInput>
 
 @property (strong, nonatomic) id<MainViewControllerOutput> output;
-@property (strong, nonatomic) MainRouter *router;
 
 @end

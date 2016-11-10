@@ -13,8 +13,8 @@
 
 @interface WallNetworkModel : JSONModel
 
-@property (strong, nonatomic) NSArray<WallPostNetworkModel *> *wall;
-@property (strong, nonatomic) NSArray<ProfileNetworkModel *> *profiles;
-@property (strong, nonatomic) NSArray<GroupNetworkModel *> *groups;
+@property (strong, nonatomic) NSArray<WallPostNetworkModel > *wall;
+@property (strong, nonatomic) NSArray<ProfileNetworkModel > *profiles;
+@property (strong, nonatomic) NSArray<GroupNetworkModel > *groups;
 
 @end

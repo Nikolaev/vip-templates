@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3D1F1E45919C73617F0DA931 /* libPods-VKWallReaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E90C0B0D8AC71D88B8153 /* libPods-VKWallReaderTests.a */; };
 		576247D5A14DFBB8CA94450D /* libPods-VKWallReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7E227FCAE4BD8010D849B3 /* libPods-VKWallReader.a */; };
+		FB378CFF1DD47E3900CD8134 /* WallPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB378CFE1DD47E3900CD8134 /* WallPostCell.m */; };
+		FB378D031DD4926E00CD8134 /* ProfileEntity+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB378D021DD4926E00CD8134 /* ProfileEntity+Additions.m */; };
+		FB378D131DD4947E00CD8134 /* GetProfileWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB378D121DD4947E00CD8134 /* GetProfileWorker.m */; };
+		FB378D191DD4954300CD8134 /* GetWallOfGroupWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB378D181DD4954300CD8134 /* GetWallOfGroupWorker.m */; };
 		FB3DE1081DD33AAB0048E494 /* GetGroupInfoWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE1071DD33AAB0048E494 /* GetGroupInfoWorker.m */; };
 		FB3DE10C1DD340850048E494 /* UpdateGroupInfoWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE10B1DD340850048E494 /* UpdateGroupInfoWorker.m */; };
 		FB3DE10F1DD341F60048E494 /* GroupEntity+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE10E1DD341F60048E494 /* GroupEntity+Additions.m */; };
@@ -16,7 +20,6 @@
 		FB3DE1161DD344DC0048E494 /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE1151DD344DC0048E494 /* ProfileModel.m */; };
 		FB3DE1191DD344E80048E494 /* WallPostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE1181DD344E80048E494 /* WallPostModel.m */; };
 		FB3DE11C1DD34F370048E494 /* GetGroupsNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3DE11B1DD34F370048E494 /* GetGroupsNetworkTask.m */; };
-		FB8C8C071DD1D578008A7995 /* Items.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8C8C061DD1D578008A7995 /* Items.storyboard */; };
 		FB8C8D321DD1E211008A7995 /* MainAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D181DD1E211008A7995 /* MainAssembly.m */; };
 		FB8C8D331DD1E211008A7995 /* MainInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D1B1DD1E211008A7995 /* MainInteractor.m */; };
 		FB8C8D341DD1E212008A7995 /* MainInputData.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C8D221DD1E211008A7995 /* MainInputData.m */; };
@@ -30,6 +33,13 @@
 		FB9772A71DD084810033B64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9772A61DD084810033B64E /* Assets.xcassets */; };
 		FB9772AA1DD084810033B64E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9772A81DD084810033B64E /* LaunchScreen.storyboard */; };
 		FB9772B51DD084810033B64E /* VKWallReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9772B41DD084810033B64E /* VKWallReaderTests.m */; };
+		FB9915D31DD44F93006ABF1C /* GroupWallAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9915B91DD44F93006ABF1C /* GroupWallAssembly.m */; };
+		FB9915D41DD44F93006ABF1C /* GroupWallInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9915BE1DD44F93006ABF1C /* GroupWallInteractor.m */; };
+		FB9915D51DD44F93006ABF1C /* GroupWallInputData.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9915C31DD44F93006ABF1C /* GroupWallInputData.m */; };
+		FB9915D61DD44F93006ABF1C /* GroupWallModels.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9915C51DD44F93006ABF1C /* GroupWallModels.m */; };
+		FB9915D71DD44F93006ABF1C /* GroupWallPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9915C81DD44F93006ABF1C /* GroupWallPresenter.m */; };
+		FB9915D81DD44F93006ABF1C /* GroupWallRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9915CD1DD44F93006ABF1C /* GroupWallRouter.m */; };
+		FB9915D91DD44F93006ABF1C /* GroupWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9915D01DD44F93006ABF1C /* GroupWallViewController.m */; };
 		FBA1EDF71DD1EB8B003F56ED /* VKWallReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDF51DD1EB8B003F56ED /* VKWallReader.xcdatamodeld */; };
 		FBA1EE011DD1FB87003F56ED /* NSThread+MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDFD1DD1FB87003F56ED /* NSThread+MainThread.m */; };
 		FBA1EE021DD1FB87003F56ED /* UIColor+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1EDFF1DD1FB87003F56ED /* UIColor+hex.m */; };
@@ -68,6 +78,14 @@
 		B5FB1A13571CF619A5855A47 /* Pods-VKWallReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKWallReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKWallReaderTests/Pods-VKWallReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE7E227FCAE4BD8010D849B3 /* libPods-VKWallReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKWallReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E601FB559F10C971378CE700 /* Pods-VKWallReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKWallReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKWallReader/Pods-VKWallReader.debug.xcconfig"; sourceTree = "<group>"; };
+		FB378CFD1DD47E3900CD8134 /* WallPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPostCell.h; sourceTree = "<group>"; };
+		FB378CFE1DD47E3900CD8134 /* WallPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPostCell.m; sourceTree = "<group>"; };
+		FB378D011DD4926E00CD8134 /* ProfileEntity+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProfileEntity+Additions.h"; sourceTree = "<group>"; };
+		FB378D021DD4926E00CD8134 /* ProfileEntity+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProfileEntity+Additions.m"; sourceTree = "<group>"; };
+		FB378D111DD4947E00CD8134 /* GetProfileWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetProfileWorker.h; sourceTree = "<group>"; };
+		FB378D121DD4947E00CD8134 /* GetProfileWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetProfileWorker.m; sourceTree = "<group>"; };
+		FB378D171DD4954300CD8134 /* GetWallOfGroupWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetWallOfGroupWorker.h; sourceTree = "<group>"; };
+		FB378D181DD4954300CD8134 /* GetWallOfGroupWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetWallOfGroupWorker.m; sourceTree = "<group>"; };
 		FB3DE1061DD33AAB0048E494 /* GetGroupInfoWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGroupInfoWorker.h; sourceTree = "<group>"; };
 		FB3DE1071DD33AAB0048E494 /* GetGroupInfoWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetGroupInfoWorker.m; sourceTree = "<group>"; };
 		FB3DE10A1DD340850048E494 /* UpdateGroupInfoWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateGroupInfoWorker.h; sourceTree = "<group>"; };
@@ -82,7 +100,6 @@
 		FB3DE1181DD344E80048E494 /* WallPostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPostModel.m; sourceTree = "<group>"; };
 		FB3DE11A1DD34F370048E494 /* GetGroupsNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGroupsNetworkTask.h; sourceTree = "<group>"; };
 		FB3DE11B1DD34F370048E494 /* GetGroupsNetworkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetGroupsNetworkTask.m; sourceTree = "<group>"; };
-		FB8C8C061DD1D578008A7995 /* Items.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Items.storyboard; sourceTree = "<group>"; };
 		FB8C8D171DD1E211008A7995 /* MainAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainAssembly.h; sourceTree = "<group>"; };
 		FB8C8D181DD1E211008A7995 /* MainAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainAssembly.m; sourceTree = "<group>"; };
 		FB8C8D1A1DD1E211008A7995 /* MainInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInteractor.h; sourceTree = "<group>"; };
@@ -116,6 +133,28 @@
 		FB9772B01DD084810033B64E /* VKWallReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKWallReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9772B41DD084810033B64E /* VKWallReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKWallReaderTests.m; sourceTree = "<group>"; };
 		FB9772B61DD084810033B64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB9915B81DD44F93006ABF1C /* GroupWallAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallAssembly.h; sourceTree = "<group>"; };
+		FB9915B91DD44F93006ABF1C /* GroupWallAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupWallAssembly.m; sourceTree = "<group>"; };
+		FB9915BA1DD44F93006ABF1C /* GroupWallInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallInput.h; sourceTree = "<group>"; };
+		FB9915BB1DD44F93006ABF1C /* GroupWallOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallOutput.h; sourceTree = "<group>"; };
+		FB9915BD1DD44F93006ABF1C /* GroupWallInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallInteractor.h; sourceTree = "<group>"; };
+		FB9915BE1DD44F93006ABF1C /* GroupWallInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupWallInteractor.m; sourceTree = "<group>"; };
+		FB9915BF1DD44F93006ABF1C /* GroupWallInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallInteractorInput.h; sourceTree = "<group>"; };
+		FB9915C01DD44F93006ABF1C /* GroupWallInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallInteractorOutput.h; sourceTree = "<group>"; };
+		FB9915C21DD44F93006ABF1C /* GroupWallInputData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallInputData.h; sourceTree = "<group>"; };
+		FB9915C31DD44F93006ABF1C /* GroupWallInputData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupWallInputData.m; sourceTree = "<group>"; };
+		FB9915C41DD44F93006ABF1C /* GroupWallModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallModels.h; sourceTree = "<group>"; };
+		FB9915C51DD44F93006ABF1C /* GroupWallModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupWallModels.m; sourceTree = "<group>"; };
+		FB9915C71DD44F93006ABF1C /* GroupWallPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallPresenter.h; sourceTree = "<group>"; };
+		FB9915C81DD44F93006ABF1C /* GroupWallPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupWallPresenter.m; sourceTree = "<group>"; };
+		FB9915C91DD44F93006ABF1C /* GroupWallPresenterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallPresenterInput.h; sourceTree = "<group>"; };
+		FB9915CA1DD44F93006ABF1C /* GroupWallPresenterOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallPresenterOutput.h; sourceTree = "<group>"; };
+		FB9915CC1DD44F93006ABF1C /* GroupWallRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallRouter.h; sourceTree = "<group>"; };
+		FB9915CD1DD44F93006ABF1C /* GroupWallRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupWallRouter.m; sourceTree = "<group>"; };
+		FB9915CF1DD44F93006ABF1C /* GroupWallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallViewController.h; sourceTree = "<group>"; };
+		FB9915D01DD44F93006ABF1C /* GroupWallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupWallViewController.m; sourceTree = "<group>"; };
+		FB9915D11DD44F93006ABF1C /* GroupWallViewControllerInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallViewControllerInput.h; sourceTree = "<group>"; };
+		FB9915D21DD44F93006ABF1C /* GroupWallViewControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupWallViewControllerOutput.h; sourceTree = "<group>"; };
 		FBA1EDF61DD1EB8B003F56ED /* VKWallReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKWallReader.xcdatamodel; sourceTree = "<group>"; };
 		FBA1EDFC1DD1FB87003F56ED /* NSThread+MainThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+MainThread.h"; sourceTree = "<group>"; };
 		FBA1EDFD1DD1FB87003F56ED /* NSThread+MainThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+MainThread.m"; sourceTree = "<group>"; };
@@ -195,6 +234,22 @@
 				9F5E90C0B0D8AC71D88B8153 /* libPods-VKWallReaderTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB378CFC1DD47E2000CD8134 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB378CFD1DD47E3900CD8134 /* WallPostCell.h */,
+				FB378CFE1DD47E3900CD8134 /* WallPostCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB378D041DD492D000CD8134 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		FB3DE1101DD344770048E494 /* PONS */ = {
@@ -356,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				FB8C8D151DD1E211008A7995 /* Main */,
+				FB9915B61DD44F93006ABF1C /* GroupWall */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -371,7 +427,6 @@
 		FB9772C21DD08D820033B64E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				FB8C8C061DD1D578008A7995 /* Items.storyboard */,
 				FB8C8D391DD1E21E008A7995 /* Main.storyboard */,
 			);
 			path = Storyboards;
@@ -393,8 +448,90 @@
 				FB3DE1071DD33AAB0048E494 /* GetGroupInfoWorker.m */,
 				FB3DE10A1DD340850048E494 /* UpdateGroupInfoWorker.h */,
 				FB3DE10B1DD340850048E494 /* UpdateGroupInfoWorker.m */,
+				FB378D111DD4947E00CD8134 /* GetProfileWorker.h */,
+				FB378D121DD4947E00CD8134 /* GetProfileWorker.m */,
+				FB378D171DD4954300CD8134 /* GetWallOfGroupWorker.h */,
+				FB378D181DD4954300CD8134 /* GetWallOfGroupWorker.m */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		FB9915B61DD44F93006ABF1C /* GroupWall */ = {
+			isa = PBXGroup;
+			children = (
+				FB9915B71DD44F93006ABF1C /* Assembly */,
+				FB9915BA1DD44F93006ABF1C /* GroupWallInput.h */,
+				FB9915BB1DD44F93006ABF1C /* GroupWallOutput.h */,
+				FB9915BC1DD44F93006ABF1C /* Interactor */,
+				FB9915C11DD44F93006ABF1C /* Models */,
+				FB9915C61DD44F93006ABF1C /* Presenter */,
+				FB9915CB1DD44F93006ABF1C /* Router */,
+				FB9915CE1DD44F93006ABF1C /* ViewController */,
+			);
+			path = GroupWall;
+			sourceTree = "<group>";
+		};
+		FB9915B71DD44F93006ABF1C /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				FB9915B81DD44F93006ABF1C /* GroupWallAssembly.h */,
+				FB9915B91DD44F93006ABF1C /* GroupWallAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FB9915BC1DD44F93006ABF1C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FB9915BD1DD44F93006ABF1C /* GroupWallInteractor.h */,
+				FB9915BE1DD44F93006ABF1C /* GroupWallInteractor.m */,
+				FB9915BF1DD44F93006ABF1C /* GroupWallInteractorInput.h */,
+				FB9915C01DD44F93006ABF1C /* GroupWallInteractorOutput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FB9915C11DD44F93006ABF1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB9915C21DD44F93006ABF1C /* GroupWallInputData.h */,
+				FB9915C31DD44F93006ABF1C /* GroupWallInputData.m */,
+				FB9915C41DD44F93006ABF1C /* GroupWallModels.h */,
+				FB9915C51DD44F93006ABF1C /* GroupWallModels.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB9915C61DD44F93006ABF1C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FB9915C71DD44F93006ABF1C /* GroupWallPresenter.h */,
+				FB9915C81DD44F93006ABF1C /* GroupWallPresenter.m */,
+				FB9915C91DD44F93006ABF1C /* GroupWallPresenterInput.h */,
+				FB9915CA1DD44F93006ABF1C /* GroupWallPresenterOutput.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FB9915CB1DD44F93006ABF1C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FB9915CC1DD44F93006ABF1C /* GroupWallRouter.h */,
+				FB9915CD1DD44F93006ABF1C /* GroupWallRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FB9915CE1DD44F93006ABF1C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB378CFC1DD47E2000CD8134 /* Views */,
+				FB9915CF1DD44F93006ABF1C /* GroupWallViewController.h */,
+				FB9915D01DD44F93006ABF1C /* GroupWallViewController.m */,
+				FB9915D11DD44F93006ABF1C /* GroupWallViewControllerInput.h */,
+				FB9915D21DD44F93006ABF1C /* GroupWallViewControllerOutput.h */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		FBA1EDED1DD1EB06003F56ED /* Models */ = {
@@ -409,9 +546,12 @@
 		FBA1EDF41DD1EB82003F56ED /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FB378D041DD492D000CD8134 /* Entities */,
 				FBA1EDF51DD1EB8B003F56ED /* VKWallReader.xcdatamodeld */,
 				FB3DE10D1DD341F60048E494 /* GroupEntity+Additions.h */,
 				FB3DE10E1DD341F60048E494 /* GroupEntity+Additions.m */,
+				FB378D011DD4926E00CD8134 /* ProfileEntity+Additions.h */,
+				FB378D021DD4926E00CD8134 /* ProfileEntity+Additions.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -622,7 +762,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB8C8C071DD1D578008A7995 /* Items.storyboard in Resources */,
 				FB9772AA1DD084810033B64E /* LaunchScreen.storyboard in Resources */,
 				FB9772A71DD084810033B64E /* Assets.xcassets in Resources */,
 				FB8C8D3A1DD1E21E008A7995 /* Main.storyboard in Resources */,
@@ -736,6 +875,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9915D51DD44F93006ABF1C /* GroupWallInputData.m in Sources */,
 				FBA1EE021DD1FB87003F56ED /* UIColor+hex.m in Sources */,
 				FB3DE11C1DD34F370048E494 /* GetGroupsNetworkTask.m in Sources */,
 				FB3DE1081DD33AAB0048E494 /* GetGroupInfoWorker.m in Sources */,
@@ -743,23 +883,33 @@
 				FB3DE1131DD344D20048E494 /* GroupModel.m in Sources */,
 				FBA1EDF71DD1EB8B003F56ED /* VKWallReader.xcdatamodeld in Sources */,
 				FBD46EA31DD2F8B00084EE09 /* ProfileNetworkModel.m in Sources */,
+				FB378D131DD4947E00CD8134 /* GetProfileWorker.m in Sources */,
 				FB3DE10F1DD341F60048E494 /* GroupEntity+Additions.m in Sources */,
 				FB8C8D351DD1E212008A7995 /* MainModels.m in Sources */,
 				FBD46E701DD2F4790084EE09 /* TaskCancellationToken.m in Sources */,
 				FBD46E931DD2F60A0084EE09 /* ErrorsHelper.m in Sources */,
+				FB9915D71DD44F93006ABF1C /* GroupWallPresenter.m in Sources */,
 				FBD46E9D1DD2F8840084EE09 /* GetGroupWallNetworkTask.m in Sources */,
 				FB8C8D361DD1E212008A7995 /* MainPresenter.m in Sources */,
 				FB97729C1DD084810033B64E /* AppDelegate.m in Sources */,
 				FBD46E8F1DD2F4790084EE09 /* SessionManagerHelper.m in Sources */,
 				FB8C8D381DD1E212008A7995 /* MainViewController.m in Sources */,
+				FB378CFF1DD47E3900CD8134 /* WallPostCell.m in Sources */,
+				FB378D191DD4954300CD8134 /* GetWallOfGroupWorker.m in Sources */,
+				FB9915D61DD44F93006ABF1C /* GroupWallModels.m in Sources */,
 				FBD46E6D1DD2F4790084EE09 /* NetworkTaskParametersModel.m in Sources */,
 				FB3DE1191DD344E80048E494 /* WallPostModel.m in Sources */,
+				FB9915D81DD44F93006ABF1C /* GroupWallRouter.m in Sources */,
 				FBD46E971DD2F6FE0084EE09 /* GetGroupNetworkTask.m in Sources */,
 				FB8C8D371DD1E212008A7995 /* MainRouter.m in Sources */,
 				FBD46E8D1DD2F4790084EE09 /* MyRequestSerializer.m in Sources */,
 				FB8C8D321DD1E211008A7995 /* MainAssembly.m in Sources */,
 				FB3DE1161DD344DC0048E494 /* ProfileModel.m in Sources */,
+				FB378D031DD4926E00CD8134 /* ProfileEntity+Additions.m in Sources */,
+				FB9915D41DD44F93006ABF1C /* GroupWallInteractor.m in Sources */,
+				FB9915D31DD44F93006ABF1C /* GroupWallAssembly.m in Sources */,
 				FBD46E6C1DD2F4790084EE09 /* BaseNetworkTask.m in Sources */,
+				FB9915D91DD44F93006ABF1C /* GroupWallViewController.m in Sources */,
 				FBA1EE091DD2035D003F56ED /* GroupDetailsCell.m in Sources */,
 				FBD46E6E1DD2F4790084EE09 /* NetworkTaskParameterValidationRule+Rules.m in Sources */,
 				FBD46EA91DD30BA70084EE09 /* WallNetworkModel.m in Sources */,

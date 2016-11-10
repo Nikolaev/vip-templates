@@ -10,4 +10,5 @@
 
 @implementation WallPostModel
 
+
 @end

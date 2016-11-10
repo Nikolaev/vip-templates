@@ -69,9 +69,9 @@
     
     MainInteractor *interactor = [MainInteractor new];
     interactor.output = (id<MainInteractorOutput>)presenter;
+    interactor.router = router;
     
     viewController.output = (id<MainViewControllerOutput>)interactor;
-    viewController.router = router;
 
     return viewController;
 }

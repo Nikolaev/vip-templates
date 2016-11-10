@@ -10,4 +10,9 @@
 
 @interface ProfileModel : NSObject
 
+@property (nonatomic, strong) NSString *uid;
+@property (nonatomic, strong) NSString *firstName;
+@property (nonatomic, strong) NSString *lastName;
+@property (nonatomic, strong) NSString *avatarURL;
+
 @end

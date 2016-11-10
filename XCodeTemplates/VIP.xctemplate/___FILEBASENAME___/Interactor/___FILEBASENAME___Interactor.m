@@ -7,6 +7,8 @@
 //
 
 #import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
+#import "___FILEBASENAMEASIDENTIFIER___Router.h"
+@import UIKit;
 
 @interface ___FILEBASENAMEASIDENTIFIER___Interactor ()
 

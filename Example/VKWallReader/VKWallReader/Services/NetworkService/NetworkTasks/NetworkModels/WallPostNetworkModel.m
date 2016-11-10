@@ -16,7 +16,9 @@
                                                                   @"uid": @"id",
                                                                   @"posterID": @"from_id",
                                                                   @"text": @"text",
-                                                                  @"photoURL": @"attachment.photo.src_big"
+                                                                  @"photoURL": @"attachment.photo.src_big",
+                                                                  @"photoWidth": @"attachment.photo.width",
+                                                                  @"photoHeight": @"attachment.photo.height"
                                                                   }];
 }
 

@@ -62,7 +62,10 @@ UITableViewDataSource
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Groups";
     [self setupRefreshHeader];
+    self.groupsTableView.rowHeight = UITableViewAutomaticDimension;
+    self.groupsTableView.estimatedRowHeight = 46.;
     self.groups = @[];
     [self.output requestInitialSetup];
 }
@@ -116,6 +119,7 @@ UITableViewDataSource
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.output requestSelectGroupAtIndex:indexPath.row];
 }
 
 #pragma mark - Private -

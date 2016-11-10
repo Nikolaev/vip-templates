@@ -30,7 +30,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UIViewController *mainVC = [MainAssembly assembly];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    nvc.navigationBarHidden = YES;
     self.window.rootViewController = nvc;
     [self.window makeKeyAndVisible];
 }
