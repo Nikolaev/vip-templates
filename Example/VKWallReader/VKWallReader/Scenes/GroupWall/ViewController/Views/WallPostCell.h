@@ -12,6 +12,6 @@
 
 @interface WallPostCell : UITableViewCell
 
-- (void)updateWithModel:(WallPostViewModel *)model;
+- (void)updateWithModel:(WallPostViewModel *)model width:(CGFloat)width;
 
 @end

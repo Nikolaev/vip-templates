@@ -14,5 +14,6 @@
 - (void)requestInitialSetup;
 - (void)requestGroupIdUpdate:(NSString *)groupId;
 - (void)requestFetchNextpage;
+- (void)requestFetchFirstpage;
 
 @end

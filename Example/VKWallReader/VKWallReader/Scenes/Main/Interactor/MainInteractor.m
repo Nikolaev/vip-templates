@@ -46,7 +46,7 @@
 
 - (void)requestInitialSetup
 {
-    self.groupUIDS = @[@"4240560", @"0", @"1", @"4", @"5", @"6", @"7"];
+    self.groupUIDS = @[@"0", @"4240560", @"23350331", @"29017935", @"53782768"];
     [self groupsUpdated];
     [self requestGroupsUpdate];
 }

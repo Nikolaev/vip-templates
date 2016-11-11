@@ -12,6 +12,7 @@
 
 - (void)requestInitialSetup;
 - (void)requestGroupIdUpdate:(NSString *)groupId;
+- (void)requestFetchFirstpage;
 - (void)requestFetchNextpage;
 
 @end

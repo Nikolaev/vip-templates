@@ -130,12 +130,6 @@
                                                     <color key="textColor" red="0.0" green="0.27702872979999998" blue="0.59450604839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" text="Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYf-O4-TJy">
-                                                    <rect key="frame" x="15" y="51" width="345" height="38.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FIa-Fe-tel">
                                                     <rect key="frame" x="15" y="104.5" width="345" height="80"/>
                                                     <constraints>
@@ -145,22 +139,33 @@
                                                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bH6-fV-FuO">
                                                     <rect key="frame" x="177.5" y="134.5" width="20" height="20"/>
                                                 </activityIndicatorView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HOJ-dn-mTg">
+                                                    <rect key="frame" x="15" y="51" width="345" height="38.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38.5" id="dUS-bf-BlO"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                                </textView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="FIa-Fe-tel" secondAttribute="trailing" constant="15" id="1CC-sf-iRd"/>
-                                                <constraint firstItem="FIa-Fe-tel" firstAttribute="top" secondItem="ZYf-O4-TJy" secondAttribute="bottom" constant="15" id="1Od-7N-D4T"/>
                                                 <constraint firstItem="s9n-vz-D7M" firstAttribute="leading" secondItem="ZTD-v3-TOU" secondAttribute="leading" constant="15" id="BKC-f5-5qX"/>
                                                 <constraint firstItem="bH6-fV-FuO" firstAttribute="centerX" secondItem="FIa-Fe-tel" secondAttribute="centerX" id="Ejb-m2-YtI"/>
                                                 <constraint firstItem="EKt-5y-1yA" firstAttribute="top" secondItem="ZTD-v3-TOU" secondAttribute="top" constant="19" id="Mun-XM-Zjm"/>
                                                 <constraint firstItem="FIa-Fe-tel" firstAttribute="leading" secondItem="ZTD-v3-TOU" secondAttribute="leading" constant="15" id="Xny-V8-TVv"/>
+                                                <constraint firstItem="HOJ-dn-mTg" firstAttribute="leading" secondItem="ZTD-v3-TOU" secondAttribute="leading" constant="15" id="Ygr-R2-p2P"/>
                                                 <constraint firstAttribute="bottom" secondItem="FIa-Fe-tel" secondAttribute="bottom" priority="900" constant="15" id="ZDb-5Q-Uqd"/>
                                                 <constraint firstItem="GpD-5q-9kw" firstAttribute="centerY" secondItem="s9n-vz-D7M" secondAttribute="centerY" id="bdI-yT-zpk"/>
-                                                <constraint firstItem="ZYf-O4-TJy" firstAttribute="leading" secondItem="ZTD-v3-TOU" secondAttribute="leading" constant="15" id="dqv-UF-DME"/>
                                                 <constraint firstItem="GpD-5q-9kw" firstAttribute="centerX" secondItem="s9n-vz-D7M" secondAttribute="centerX" id="g0c-Vu-nqv"/>
-                                                <constraint firstAttribute="trailing" secondItem="ZYf-O4-TJy" secondAttribute="trailing" constant="15" id="gyz-w2-Jqf"/>
                                                 <constraint firstAttribute="trailing" secondItem="EKt-5y-1yA" secondAttribute="trailing" constant="15" id="hHN-Eh-4ih"/>
-                                                <constraint firstItem="ZYf-O4-TJy" firstAttribute="top" secondItem="EKt-5y-1yA" secondAttribute="bottom" constant="15" id="qag-G2-UFT"/>
+                                                <constraint firstItem="FIa-Fe-tel" firstAttribute="top" secondItem="HOJ-dn-mTg" secondAttribute="bottom" priority="900" constant="15" id="npC-ZE-8J4"/>
+                                                <constraint firstItem="HOJ-dn-mTg" firstAttribute="top" secondItem="EKt-5y-1yA" secondAttribute="bottom" constant="15" id="q5M-Lm-wS3"/>
                                                 <constraint firstItem="s9n-vz-D7M" firstAttribute="top" secondItem="ZTD-v3-TOU" secondAttribute="top" constant="15" id="tYf-nY-gwe"/>
+                                                <constraint firstAttribute="trailing" secondItem="HOJ-dn-mTg" secondAttribute="trailing" constant="15" id="u2c-uO-IBu"/>
                                                 <constraint firstItem="EKt-5y-1yA" firstAttribute="leading" secondItem="s9n-vz-D7M" secondAttribute="trailing" constant="10" id="vxB-O1-ZAT"/>
                                                 <constraint firstItem="bH6-fV-FuO" firstAttribute="centerY" secondItem="FIa-Fe-tel" secondAttribute="centerY" id="zuc-je-Llt"/>
                                             </constraints>
@@ -170,10 +175,11 @@
                                             <outlet property="aivUserAvatar" destination="GpD-5q-9kw" id="Tgk-6y-s28"/>
                                             <outlet property="ivPostPhoto" destination="FIa-Fe-tel" id="QRb-cY-NFW"/>
                                             <outlet property="ivUserAvatar" destination="s9n-vz-D7M" id="Eij-Ok-6Of"/>
-                                            <outlet property="lblText" destination="ZYf-O4-TJy" id="Aja-Vc-g1w"/>
                                             <outlet property="lblUsername" destination="EKt-5y-1yA" id="2yr-JV-jcj"/>
                                             <outlet property="photoBottom" destination="ZDb-5Q-Uqd" id="v45-FD-XuE"/>
                                             <outlet property="photoHeight" destination="Cga-RW-QfR" id="Ma6-th-KXm"/>
+                                            <outlet property="tvText" destination="HOJ-dn-mTg" id="vsi-AN-5RW"/>
+                                            <outlet property="tvTextHeiht" destination="dUS-bf-BlO" id="6gc-Zi-Hb3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

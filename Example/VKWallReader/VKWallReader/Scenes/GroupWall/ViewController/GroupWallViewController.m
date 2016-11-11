@@ -11,6 +11,7 @@
 #import "GroupWallAssembly.h"
 #import "GroupWallModels.h"
 #import "WallPostCell.h"
+#import <MJRefresh/MJRefresh.h>
 
 @interface GroupWallViewController ()
 <
@@ -62,6 +63,7 @@ UITableViewDelegate
     self.postsTableView.rowHeight = UITableViewAutomaticDimension;
     self.postsTableView.estimatedRowHeight = 120.;
     [self setupRefreshHeader];
+    [self setupRefreshFooter];
     [self.output requestInitialSetup];
 }
 
@@ -92,6 +94,8 @@ UITableViewDelegate
 - (void)displayPosts:(NSArray<WallPostViewModel *> *)posts
 {
     self.posts = posts;
+    [self.postsTableView.mj_header endRefreshing];
+    [self.postsTableView.mj_footer endRefreshingWithNoMoreData];
     [self.postsTableView reloadData];
 }
 
@@ -109,7 +113,7 @@ UITableViewDelegate
 {
     WallPostViewModel *model = self.posts[indexPath.row];
     WallPostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WallPostCell" forIndexPath:indexPath];
-    [cell updateWithModel:model];
+    [cell updateWithModel:model width:self.postsTableView.frame.size.width];
     return cell;
 }
 
@@ -118,23 +122,37 @@ UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    [self.output requestSelectGroupAtIndex:indexPath.row];
 }
 
 #pragma mark - Private -
 
 - (void)setupRefreshHeader
 {
-//    __weak typeof(self) weakSelf = self;
-//    self.groupsTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-//        [weakSelf.output requestGroupsUpdate];
-//    }];
-//    
-//    MJRefreshHeader *refreshStateheader = [self.groupsTableView mj_header];
-//    if ([refreshStateheader isKindOfClass:[MJRefreshNormalHeader class]]) {
-//        [(MJRefreshNormalHeader *)refreshStateheader stateLabel].hidden = YES;
-//        refreshStateheader.automaticallyChangeAlpha = YES;
-//    }
+    __weak typeof(self) weakSelf = self;
+    self.postsTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [weakSelf.output requestFetchFirstpage];
+    }];
+    
+    MJRefreshHeader *refreshStateheader = [self.postsTableView mj_header];
+    if ([refreshStateheader isKindOfClass:[MJRefreshNormalHeader class]]) {
+        [(MJRefreshNormalHeader *)refreshStateheader stateLabel].hidden = YES;
+        refreshStateheader.automaticallyChangeAlpha = YES;
+    }
+}
+
+- (void)setupRefreshFooter
+{
+    __weak typeof(self) weakSelf = self;
+    self.postsTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        [weakSelf.output requestFetchNextpage];
+    }];
+    
+    MJRefreshFooter *refreshStateFooter = [self.postsTableView mj_footer];
+    if ([refreshStateFooter isKindOfClass:[MJRefreshAutoNormalFooter class]]) {
+        [(MJRefreshAutoNormalFooter *)refreshStateFooter stateLabel].hidden = YES;
+        [(MJRefreshAutoNormalFooter *)refreshStateFooter setRefreshingTitleHidden:YES];
+        refreshStateFooter.automaticallyChangeAlpha = YES;
+    }
 }
 
 #pragma mark - Private -

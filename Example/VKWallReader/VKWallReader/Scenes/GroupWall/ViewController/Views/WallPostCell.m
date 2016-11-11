@@ -15,11 +15,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblUsername;
 @property (weak, nonatomic) IBOutlet UIImageView *ivUserAvatar;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *aivUserAvatar;
-@property (weak, nonatomic) IBOutlet UILabel *lblText;
+@property (weak, nonatomic) IBOutlet UITextView *tvText;
 @property (weak, nonatomic) IBOutlet UIImageView *ivPostPhoto;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *aivPostPhoto;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *photoHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *photoBottom;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tvTextHeiht;
+
+@property (assign, nonatomic) CGFloat lastKnownWidth;
 
 @end
 
@@ -27,20 +30,23 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    self.tvText.textContainer.lineFragmentPadding = 0;
+    [self.tvText setContentInset:UIEdgeInsetsZero];
+    [self.tvText setTextContainerInset:UIEdgeInsetsZero];
+    [self.tvText setContentOffset:CGPointZero];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
-- (void)updateWithModel:(WallPostViewModel *)model
+- (void)layoutSubviews
 {
-    [self layoutIfNeeded];
+    [super layoutSubviews];
+}
+
+- (void)updateWithModel:(WallPostViewModel *)model width:(CGFloat)width
+{
     self.lblUsername.text = model.userName;
-    self.lblText.text = model.text;
+    self.tvText.text = model.text;
+    self.tvTextHeiht.constant = ceilf([self.tvText sizeThatFits:CGSizeMake(width - 30., FLT_MAX)].height);
+    
     NSURL *url = [NSURL URLWithString:model.userAvatarURL];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     self.aivUserAvatar.hidden = NO;
@@ -90,7 +96,6 @@
         self.photoHeight.constant = 0.;
         self.photoBottom.constant = 0.;
     }
-    [self layoutIfNeeded];
 }
 
 @end

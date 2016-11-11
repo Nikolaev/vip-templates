@@ -10,4 +10,12 @@
 
 @implementation GroupNetworkModel
 
+- (BOOL)validate:(NSError *__autoreleasing *)error
+{
+    self.name = [self.name stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
+    self.name = [self.name stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
+    return YES;
+}
+
+
 @end

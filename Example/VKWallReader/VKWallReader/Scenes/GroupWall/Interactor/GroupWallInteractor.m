@@ -35,7 +35,7 @@
 - (void)initialize
 {
     self.posts = [NSMutableArray array];
-    self.paginationPageSize = 50;
+    self.paginationPageSize = 20;
 }
 
 - (void)dealloc
@@ -54,7 +54,23 @@
 - (void)requestInitialSetup
 {
     [self.output presentNavigationTitle:self.group.name];
-    [self requestFetchNextpage];
+    [self requestFetchFirstpage];
+}
+
+- (void)requestFetchFirstpage
+{
+    //TODO: move pagination logic to separate worker
+    GetWallOfGroupWorker *worker = [GetWallOfGroupWorker new];
+    __weak typeof(self) wself = self;
+    [worker getWallOfGroup:self.group.uid offset:0 count:self.paginationPageSize callback:^(NSArray<WallPostModel *> *posts, NSError *error) {
+        if (error != nil) {
+            //TODO: handle error
+            return ;
+        }
+        //TODO: handle "overlaps" and "gaps"
+        wself.posts = [posts mutableCopy];
+        [wself.output presentPosts:wself.posts];
+    }];
 }
 
 - (void)requestFetchNextpage

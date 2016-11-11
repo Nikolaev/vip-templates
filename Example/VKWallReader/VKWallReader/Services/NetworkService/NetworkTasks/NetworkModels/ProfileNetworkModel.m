@@ -19,4 +19,13 @@
                                                                   }];
 }
 
+- (BOOL)validate:(NSError *__autoreleasing *)error
+{
+    self.firstName = [self.firstName stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
+    self.firstName = [self.firstName stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
+    self.lastName = [self.lastName stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
+    self.lastName = [self.lastName stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
+    return YES;
+}
+
 @end

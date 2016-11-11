@@ -49,7 +49,8 @@
                     model.photoHeight = obj.photoHeight;
                     model.posterID = obj.posterID;
                     if ([model.posterID containsString:@"-"]) {
-                        GroupEntity *group = [GroupEntity MR_findFirstByAttribute:@"uid" withValue:model.posterID];
+                        NSString *guid = [model.posterID stringByReplacingOccurrencesOfString:@"-" withString:@""];
+                        GroupEntity *group = [GroupEntity MR_findFirstByAttribute:@"uid" withValue:guid];
                         model.posterName = group.name;
                         model.posterAvatarURL = group.photoURL;
                     } else {
