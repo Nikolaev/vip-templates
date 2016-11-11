@@ -17,6 +17,7 @@
                                     count:(NSUInteger)count
                                  callback:(void (^)(WallNetworkModel *wall, NSError *error))callback
 {
+    gid = [@"-" stringByAppendingString:gid];
     [self.parametersModel addParameter:@"owner_id" value:gid];
     [self.parametersModel addParameter:@"offset" value:@(offset)];
     [self.parametersModel addParameter:@"count" value:@(count)];

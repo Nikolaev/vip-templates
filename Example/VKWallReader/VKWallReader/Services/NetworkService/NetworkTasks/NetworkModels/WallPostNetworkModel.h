@@ -16,8 +16,8 @@
 @property (strong, nonatomic) NSString *uid;
 @property (strong, nonatomic) NSString *posterID;
 @property (strong, nonatomic) NSString *text;
-@property (strong, nonatomic) NSString *photoURL;
-@property (strong, nonatomic) NSNumber *photoWidth;
-@property (strong, nonatomic) NSNumber *photoHeight;
+@property (strong, nonatomic) NSString<Optional> *photoURL;
+@property (strong, nonatomic) NSNumber<Optional> *photoWidth;
+@property (strong, nonatomic) NSNumber<Optional> *photoHeight;
 
 @end

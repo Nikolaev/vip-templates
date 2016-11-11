@@ -39,13 +39,14 @@
     self.activityIndicator.hidden = NO;
     [self.activityIndicator startAnimating];
     self.ivIcon.image = nil;
+    __weak typeof(self) wself = self;
     [self.ivIcon setImageWithURLRequest:req placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
-        self.ivIcon.image = image;
-        self.activityIndicator.hidden = YES;
-        [self.activityIndicator stopAnimating];
+        wself.ivIcon.image = image;
+        wself.activityIndicator.hidden = YES;
+        [wself.activityIndicator stopAnimating];
     } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
-        self.activityIndicator.hidden = YES;
-        [self.activityIndicator stopAnimating];
+        wself.activityIndicator.hidden = YES;
+        [wself.activityIndicator stopAnimating];
     }];
 }
 

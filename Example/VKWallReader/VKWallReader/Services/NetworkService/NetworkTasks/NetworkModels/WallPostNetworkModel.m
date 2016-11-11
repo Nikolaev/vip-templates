@@ -22,4 +22,12 @@
                                                                   }];
 }
 
+- (BOOL)validate:(NSError *__autoreleasing *)error
+{
+    self.text = [self.text stringByRemovingPercentEncoding];
+    self.text = [self.text stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
+    self.text = [self.text stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
+    return YES;
+}
+
 @end
